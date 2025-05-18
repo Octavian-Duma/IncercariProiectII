@@ -105,7 +105,8 @@ namespace RentApp.Server.Service
                     PricePerDay = p.PricePerDay,
                     UserName = p.user.Name,
                     TelephoneNumber = p.user.telephoneNumber,
-                    ImagePath = p.ImagePath != null ? $"https://localhost:7020{p.ImagePath}" : null
+                    ImagePath = p.ImagePath != null ? $"https://localhost:7020{p.ImagePath}" : null,
+                    Location = p.Location
                 }).FirstOrDefaultAsync();
         }
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\RentApp.Server.csproj": {}
+    "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\RentApp.Server.csproj": {}
   },
   "projects": {
-    "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\RentApp.Server.csproj": {
+    "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\RentApp.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\RentApp.Server.csproj",
+        "projectUniqueName": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\RentApp.Server.csproj",
         "projectName": "RentApp.Server",
-        "projectPath": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\RentApp.Server.csproj",
+        "projectPath": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\RentApp.Server.csproj",
         "packagesPath": "C:\\Users\\Octavian\\.nuget\\packages\\",
-        "outputPath": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\obj\\",
+        "outputPath": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

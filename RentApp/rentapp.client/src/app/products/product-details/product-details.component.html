@@ -1,15 +1,60 @@
-<div class="details-container" *ngIf="product">
+<!-- Afișăm un mesaj de încărcare când isLoading e true -->
+<div class="loading-container" *ngIf="isLoading">
+  <div class="loading-spinner"></div>
+  <p>Se încarcă detaliile produsului...</p>
+</div>
+
+<!-- Afișăm mesaj de eroare dacă există -->
+<div class="error-message" *ngIf="errorMessage">
+  <p>{{ errorMessage }}</p>
   <button class="back-btn" (click)="goBack()">Înapoi la produse</button>
-  <div class="details-content">
-    <img [src]="product.imagePath" [alt]="product.name" class="details-image" *ngIf="product.imagePath">
+</div>
+
+<!-- Conținutul principal când produsul este încărcat -->
+<div class="details-container" *ngIf="product && !isLoading && !errorMessage">
+  <div class="button-container">
+    <button class="back-btn" (click)="goBack()">Înapoi la produse</button>
+  </div>
+  <div class="details-flex">
+    <!-- Partea stângă: info -->
     <div class="details-info">
       <h2>{{ product.name }}</h2>
-      <p><strong>Categorie:</strong> {{ product.category }}</p>
-      <p><strong>Descriere:</strong> {{ product.description }}</p>
-      <p><strong>Preț/zi:</strong> {{ product.pricePerDay }} RON</p>
-      <p><strong>Disponibil:</strong> {{ product.available ? 'Da' : 'Nu' }}</p>
-      <p><strong>Listat de:</strong> {{ product.userName }}</p>
-      <p *ngIf="product.telephoneNumber"><strong>Telefon:</strong> {{ product.telephoneNumber }}</p>
+      <div class="info-box">
+        <div class="info-item">
+          <span class="label">Postat de:</span>
+          <span class="value">{{ product.userName }}</span>
+        </div>
+        <div class="info-item">
+          <span class="label">Adăugat la data de:</span>
+          <span class="value">{{ product.addedAt | date:'dd.MM.yyyy' }}</span>
+        </div>
+        <div class="info-item">
+          <span class="label">Locație:</span>
+          <span class="value">{{ product.location }}</span>
+        </div>
+        <div class="info-item">
+          <span class="label">Preț/zi:</span>
+          <span class="value highlight-price">{{ product.pricePerDay }} RON</span>
+        </div>
+        <div class="info-item">
+          <span class="label">Disponibil:</span>
+          <span class="value availability">{{ product.available ? 'Da' : 'Nu' }}</span>
+        </div>
+        <div *ngIf="product.telephoneNumber" class="info-item">
+          <span class="label">Telefon:</span>
+          <span class="value">{{ product.telephoneNumber }}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Partea dreaptă: poză și descriere -->
+    <div class="details-image-desc">
+      <img *ngIf="product.imagePath" [src]="product.imagePath" [alt]="product.name" class="details-image" />
+      <div *ngIf="!product.imagePath" class="no-image">Fără imagine</div>
+      <div class="details-description">
+        <h3>Descriere</h3>
+        <p>{{ product.description }}</p>
+      </div>
     </div>
   </div>
 </div>

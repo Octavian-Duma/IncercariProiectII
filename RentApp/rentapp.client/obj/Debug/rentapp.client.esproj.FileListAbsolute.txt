@@ -8,3 +8,5 @@ D:\Facultate\II\Rent_it-master\RentAppV2\rentapp.client\obj\Debug\rentapp.client
 D:\RentAppV4\RentAppV2\rentapp.client\obj\Debug\rentapp.client.esproj.CoreCompileInputs.cache
 D:\Rent_it\RentAppV2\rentapp.client\obj\Debug\rentapp.client.esproj.CoreCompileInputs.cache
 C:\Facultate\An 3\Sem 2\II\Proiect\sourceCode\Rent_it\RentApp\rentapp.client\obj\Debug\rentapp.client.esproj.CoreCompileInputs.cache
+C:\Facultate\An 3\Sem 2\II\Proiect\sourceCode\IncercariProiectII\RentApp\rentapp.client\obj\Debug\rentapp.client.esproj.CoreCompileInputs.cache
+C:\Facultate\An 3\Sem 2\II\Proiect\PersonalWorkTest\RentApp\rentapp.client\obj\Debug\rentapp.client.esproj.CoreCompileInputs.cache

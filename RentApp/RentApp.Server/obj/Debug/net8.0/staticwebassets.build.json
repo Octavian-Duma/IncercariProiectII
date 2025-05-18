@@ -1,38 +1,38 @@
 {
   "Version": 1,
-  "Hash": "qhturd3zhUqwQA9zVW8eAnyQn61vlRaldNR1k6Dm714=",
+  "Hash": "cg+lwjs32ttMOlaOFtllev0nvtJ38WqFPHp/rG3OLvI=",
   "Source": "RentApp.Server",
   "BasePath": "_content/RentApp.Server",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\rentapp.client\\rentapp.client.esproj",
+      "Identity": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\rentapp.client.esproj",
       "Version": 2,
       "Source": "rentapp.client",
       "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "",
-      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "",
-      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
     }
   ],
   "DiscoveryPatterns": [
     {
       "Name": "RentApp.Server\\wwwroot",
       "Source": "RentApp.Server",
-      "ContentRoot": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\",
       "BasePath": "_content/RentApp.Server",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\0b4e515c-a9eb-4535-a241-1990e8767ae1.jpg",
+      "Identity": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\0b4e515c-a9eb-4535-a241-1990e8767ae1.jpg",
       "SourceId": "RentApp.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\",
       "BasePath": "_content/RentApp.Server",
       "RelativePath": "uploads/0b4e515c-a9eb-4535-a241-1990e8767ae1#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -50,10 +50,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\0b4e515c-a9eb-4535-a241-1990e8767ae1.jpg"
     },
     {
-      "Identity": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\19fc55fc-7e9e-4298-ad77-b0d328bab941.png",
+      "Identity": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\19fc55fc-7e9e-4298-ad77-b0d328bab941.png",
       "SourceId": "RentApp.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\",
       "BasePath": "_content/RentApp.Server",
       "RelativePath": "uploads/19fc55fc-7e9e-4298-ad77-b0d328bab941#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -71,10 +71,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\19fc55fc-7e9e-4298-ad77-b0d328bab941.png"
     },
     {
-      "Identity": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\3e799ef1-9f7c-4b82-b6dd-358cd19815d3.png",
+      "Identity": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\3e799ef1-9f7c-4b82-b6dd-358cd19815d3.png",
       "SourceId": "RentApp.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\",
       "BasePath": "_content/RentApp.Server",
       "RelativePath": "uploads/3e799ef1-9f7c-4b82-b6dd-358cd19815d3#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -92,10 +92,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\3e799ef1-9f7c-4b82-b6dd-358cd19815d3.png"
     },
     {
-      "Identity": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\4b400d0d-003b-42bc-9edf-2720bcf8f50f.jpg",
+      "Identity": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\4b400d0d-003b-42bc-9edf-2720bcf8f50f.jpg",
       "SourceId": "RentApp.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\",
       "BasePath": "_content/RentApp.Server",
       "RelativePath": "uploads/4b400d0d-003b-42bc-9edf-2720bcf8f50f#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -113,10 +113,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\4b400d0d-003b-42bc-9edf-2720bcf8f50f.jpg"
     },
     {
-      "Identity": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\542fce9c-9eda-4061-a3a5-9cadfc45a50d.jpg",
+      "Identity": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\542fce9c-9eda-4061-a3a5-9cadfc45a50d.jpg",
       "SourceId": "RentApp.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\",
       "BasePath": "_content/RentApp.Server",
       "RelativePath": "uploads/542fce9c-9eda-4061-a3a5-9cadfc45a50d#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -134,10 +134,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\542fce9c-9eda-4061-a3a5-9cadfc45a50d.jpg"
     },
     {
-      "Identity": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\6164569c-081c-4b57-a428-8acf232e76fc.png",
+      "Identity": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\6164569c-081c-4b57-a428-8acf232e76fc.png",
       "SourceId": "RentApp.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\",
       "BasePath": "_content/RentApp.Server",
       "RelativePath": "uploads/6164569c-081c-4b57-a428-8acf232e76fc#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -155,10 +155,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\6164569c-081c-4b57-a428-8acf232e76fc.png"
     },
     {
-      "Identity": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\660f7546-c712-4ce5-b909-ff223ad17ff7.png",
+      "Identity": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\660f7546-c712-4ce5-b909-ff223ad17ff7.png",
       "SourceId": "RentApp.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\",
       "BasePath": "_content/RentApp.Server",
       "RelativePath": "uploads/660f7546-c712-4ce5-b909-ff223ad17ff7#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -176,10 +176,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\660f7546-c712-4ce5-b909-ff223ad17ff7.png"
     },
     {
-      "Identity": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\71a4ab4c-b980-4e2c-bb81-6841f03f2790.jpg",
+      "Identity": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\71a4ab4c-b980-4e2c-bb81-6841f03f2790.jpg",
       "SourceId": "RentApp.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\",
       "BasePath": "_content/RentApp.Server",
       "RelativePath": "uploads/71a4ab4c-b980-4e2c-bb81-6841f03f2790#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -197,10 +197,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\71a4ab4c-b980-4e2c-bb81-6841f03f2790.jpg"
     },
     {
-      "Identity": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\71faef93-2746-4b9d-9392-7c2fa3dd6445.png",
+      "Identity": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\71faef93-2746-4b9d-9392-7c2fa3dd6445.png",
       "SourceId": "RentApp.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\",
       "BasePath": "_content/RentApp.Server",
       "RelativePath": "uploads/71faef93-2746-4b9d-9392-7c2fa3dd6445#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -218,10 +218,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\71faef93-2746-4b9d-9392-7c2fa3dd6445.png"
     },
     {
-      "Identity": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\77679a21-13d7-4f45-ae2d-3703366a4e27.jpg",
+      "Identity": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\77679a21-13d7-4f45-ae2d-3703366a4e27.jpg",
       "SourceId": "RentApp.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\",
       "BasePath": "_content/RentApp.Server",
       "RelativePath": "uploads/77679a21-13d7-4f45-ae2d-3703366a4e27#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -239,10 +239,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\77679a21-13d7-4f45-ae2d-3703366a4e27.jpg"
     },
     {
-      "Identity": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\8b843b72-3a46-482d-b7e8-0b3ad6b1448e.png",
+      "Identity": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\8b843b72-3a46-482d-b7e8-0b3ad6b1448e.png",
       "SourceId": "RentApp.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\",
       "BasePath": "_content/RentApp.Server",
       "RelativePath": "uploads/8b843b72-3a46-482d-b7e8-0b3ad6b1448e#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -260,10 +260,31 @@
       "OriginalItemSpec": "wwwroot\\uploads\\8b843b72-3a46-482d-b7e8-0b3ad6b1448e.png"
     },
     {
-      "Identity": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\c0fbc134-10d1-4ccb-9645-22df55dd1fbc.jpg",
+      "Identity": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\bb33759d-061a-4986-abe1-4236e2866cac.jpg",
       "SourceId": "RentApp.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\",
+      "BasePath": "_content/RentApp.Server",
+      "RelativePath": "uploads/bb33759d-061a-4986-abe1-4236e2866cac#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ep4ml9ijvn",
+      "Integrity": "rmU9Z2TRVObCw4X6yYIvpMlPjXAPiFqcTQtohCtULT8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\bb33759d-061a-4986-abe1-4236e2866cac.jpg"
+    },
+    {
+      "Identity": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\c0fbc134-10d1-4ccb-9645-22df55dd1fbc.jpg",
+      "SourceId": "RentApp.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\",
       "BasePath": "_content/RentApp.Server",
       "RelativePath": "uploads/c0fbc134-10d1-4ccb-9645-22df55dd1fbc#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -281,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\c0fbc134-10d1-4ccb-9645-22df55dd1fbc.jpg"
     },
     {
-      "Identity": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\e1c7eaa8-b875-419a-ae2b-96d56b60a061.png",
+      "Identity": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\e1c7eaa8-b875-419a-ae2b-96d56b60a061.png",
       "SourceId": "RentApp.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\",
       "BasePath": "_content/RentApp.Server",
       "RelativePath": "uploads/e1c7eaa8-b875-419a-ae2b-96d56b60a061#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -302,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\e1c7eaa8-b875-419a-ae2b-96d56b60a061.png"
     },
     {
-      "Identity": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\f44fd932-85f4-4971-aff4-9036bc66fbb5.png",
+      "Identity": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\f44fd932-85f4-4971-aff4-9036bc66fbb5.png",
       "SourceId": "RentApp.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\",
       "BasePath": "_content/RentApp.Server",
       "RelativePath": "uploads/f44fd932-85f4-4971-aff4-9036bc66fbb5#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -326,7 +347,7 @@
   "Endpoints": [
     {
       "Route": "uploads/0b4e515c-a9eb-4535-a241-1990e8767ae1.jpg",
-      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\0b4e515c-a9eb-4535-a241-1990e8767ae1.jpg",
+      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\0b4e515c-a9eb-4535-a241-1990e8767ae1.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -347,7 +368,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 18:31:47 GMT"
+          "Value": "Sun, 18 May 2025 22:47:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -363,7 +384,7 @@
     },
     {
       "Route": "uploads/0b4e515c-a9eb-4535-a241-1990e8767ae1.m9tkopgd7w.jpg",
-      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\0b4e515c-a9eb-4535-a241-1990e8767ae1.jpg",
+      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\0b4e515c-a9eb-4535-a241-1990e8767ae1.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -384,7 +405,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 18:31:47 GMT"
+          "Value": "Sun, 18 May 2025 22:47:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -408,7 +429,7 @@
     },
     {
       "Route": "uploads/19fc55fc-7e9e-4298-ad77-b0d328bab941.png",
-      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\19fc55fc-7e9e-4298-ad77-b0d328bab941.png",
+      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\19fc55fc-7e9e-4298-ad77-b0d328bab941.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -429,7 +450,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 11:16:33 GMT"
+          "Value": "Sun, 18 May 2025 22:47:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -445,7 +466,7 @@
     },
     {
       "Route": "uploads/19fc55fc-7e9e-4298-ad77-b0d328bab941.ytlwqbc5g4.png",
-      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\19fc55fc-7e9e-4298-ad77-b0d328bab941.png",
+      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\19fc55fc-7e9e-4298-ad77-b0d328bab941.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -466,7 +487,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 11:16:33 GMT"
+          "Value": "Sun, 18 May 2025 22:47:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -490,7 +511,7 @@
     },
     {
       "Route": "uploads/3e799ef1-9f7c-4b82-b6dd-358cd19815d3.png",
-      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\3e799ef1-9f7c-4b82-b6dd-358cd19815d3.png",
+      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\3e799ef1-9f7c-4b82-b6dd-358cd19815d3.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -511,7 +532,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 11:16:33 GMT"
+          "Value": "Sun, 18 May 2025 22:47:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -527,7 +548,7 @@
     },
     {
       "Route": "uploads/3e799ef1-9f7c-4b82-b6dd-358cd19815d3.ytlwqbc5g4.png",
-      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\3e799ef1-9f7c-4b82-b6dd-358cd19815d3.png",
+      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\3e799ef1-9f7c-4b82-b6dd-358cd19815d3.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -548,7 +569,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 11:16:33 GMT"
+          "Value": "Sun, 18 May 2025 22:47:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -572,7 +593,7 @@
     },
     {
       "Route": "uploads/4b400d0d-003b-42bc-9edf-2720bcf8f50f.jpg",
-      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\4b400d0d-003b-42bc-9edf-2720bcf8f50f.jpg",
+      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\4b400d0d-003b-42bc-9edf-2720bcf8f50f.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -593,7 +614,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 18:24:58 GMT"
+          "Value": "Sun, 18 May 2025 22:47:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -609,7 +630,7 @@
     },
     {
       "Route": "uploads/4b400d0d-003b-42bc-9edf-2720bcf8f50f.m9tkopgd7w.jpg",
-      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\4b400d0d-003b-42bc-9edf-2720bcf8f50f.jpg",
+      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\4b400d0d-003b-42bc-9edf-2720bcf8f50f.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -630,7 +651,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 18:24:58 GMT"
+          "Value": "Sun, 18 May 2025 22:47:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -654,7 +675,7 @@
     },
     {
       "Route": "uploads/542fce9c-9eda-4061-a3a5-9cadfc45a50d.jpg",
-      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\542fce9c-9eda-4061-a3a5-9cadfc45a50d.jpg",
+      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\542fce9c-9eda-4061-a3a5-9cadfc45a50d.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -675,7 +696,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 16:26:43 GMT"
+          "Value": "Sun, 18 May 2025 22:47:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -691,7 +712,7 @@
     },
     {
       "Route": "uploads/542fce9c-9eda-4061-a3a5-9cadfc45a50d.ppcrktvb0o.jpg",
-      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\542fce9c-9eda-4061-a3a5-9cadfc45a50d.jpg",
+      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\542fce9c-9eda-4061-a3a5-9cadfc45a50d.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -712,7 +733,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 16:26:43 GMT"
+          "Value": "Sun, 18 May 2025 22:47:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -736,7 +757,7 @@
     },
     {
       "Route": "uploads/6164569c-081c-4b57-a428-8acf232e76fc.png",
-      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\6164569c-081c-4b57-a428-8acf232e76fc.png",
+      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\6164569c-081c-4b57-a428-8acf232e76fc.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -757,7 +778,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 11:16:33 GMT"
+          "Value": "Sun, 18 May 2025 22:47:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -773,7 +794,7 @@
     },
     {
       "Route": "uploads/6164569c-081c-4b57-a428-8acf232e76fc.ytlwqbc5g4.png",
-      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\6164569c-081c-4b57-a428-8acf232e76fc.png",
+      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\6164569c-081c-4b57-a428-8acf232e76fc.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -794,7 +815,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 11:16:33 GMT"
+          "Value": "Sun, 18 May 2025 22:47:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -818,7 +839,7 @@
     },
     {
       "Route": "uploads/660f7546-c712-4ce5-b909-ff223ad17ff7.png",
-      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\660f7546-c712-4ce5-b909-ff223ad17ff7.png",
+      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\660f7546-c712-4ce5-b909-ff223ad17ff7.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -839,7 +860,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 11:16:33 GMT"
+          "Value": "Sun, 18 May 2025 22:47:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -855,7 +876,7 @@
     },
     {
       "Route": "uploads/660f7546-c712-4ce5-b909-ff223ad17ff7.ytlwqbc5g4.png",
-      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\660f7546-c712-4ce5-b909-ff223ad17ff7.png",
+      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\660f7546-c712-4ce5-b909-ff223ad17ff7.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -876,7 +897,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 11:16:33 GMT"
+          "Value": "Sun, 18 May 2025 22:47:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -900,7 +921,7 @@
     },
     {
       "Route": "uploads/71a4ab4c-b980-4e2c-bb81-6841f03f2790.jpg",
-      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\71a4ab4c-b980-4e2c-bb81-6841f03f2790.jpg",
+      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\71a4ab4c-b980-4e2c-bb81-6841f03f2790.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -921,7 +942,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 16:22:07 GMT"
+          "Value": "Sun, 18 May 2025 22:47:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -937,7 +958,7 @@
     },
     {
       "Route": "uploads/71a4ab4c-b980-4e2c-bb81-6841f03f2790.mg4nqj3zce.jpg",
-      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\71a4ab4c-b980-4e2c-bb81-6841f03f2790.jpg",
+      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\71a4ab4c-b980-4e2c-bb81-6841f03f2790.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -958,7 +979,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 16:22:07 GMT"
+          "Value": "Sun, 18 May 2025 22:47:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -982,7 +1003,7 @@
     },
     {
       "Route": "uploads/71faef93-2746-4b9d-9392-7c2fa3dd6445.png",
-      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\71faef93-2746-4b9d-9392-7c2fa3dd6445.png",
+      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\71faef93-2746-4b9d-9392-7c2fa3dd6445.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1003,7 +1024,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 11:16:33 GMT"
+          "Value": "Sun, 18 May 2025 22:47:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1019,7 +1040,7 @@
     },
     {
       "Route": "uploads/71faef93-2746-4b9d-9392-7c2fa3dd6445.ytlwqbc5g4.png",
-      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\71faef93-2746-4b9d-9392-7c2fa3dd6445.png",
+      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\71faef93-2746-4b9d-9392-7c2fa3dd6445.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1040,7 +1061,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 11:16:33 GMT"
+          "Value": "Sun, 18 May 2025 22:47:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1064,7 +1085,7 @@
     },
     {
       "Route": "uploads/77679a21-13d7-4f45-ae2d-3703366a4e27.jpg",
-      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\77679a21-13d7-4f45-ae2d-3703366a4e27.jpg",
+      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\77679a21-13d7-4f45-ae2d-3703366a4e27.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1085,7 +1106,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 16:20:43 GMT"
+          "Value": "Sun, 18 May 2025 22:47:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1101,7 +1122,7 @@
     },
     {
       "Route": "uploads/77679a21-13d7-4f45-ae2d-3703366a4e27.m9tkopgd7w.jpg",
-      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\77679a21-13d7-4f45-ae2d-3703366a4e27.jpg",
+      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\77679a21-13d7-4f45-ae2d-3703366a4e27.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1122,7 +1143,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 16:20:43 GMT"
+          "Value": "Sun, 18 May 2025 22:47:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1146,7 +1167,7 @@
     },
     {
       "Route": "uploads/8b843b72-3a46-482d-b7e8-0b3ad6b1448e.png",
-      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\8b843b72-3a46-482d-b7e8-0b3ad6b1448e.png",
+      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\8b843b72-3a46-482d-b7e8-0b3ad6b1448e.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1167,7 +1188,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 11:16:33 GMT"
+          "Value": "Sun, 18 May 2025 22:47:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1183,7 +1204,7 @@
     },
     {
       "Route": "uploads/8b843b72-3a46-482d-b7e8-0b3ad6b1448e.ytlwqbc5g4.png",
-      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\8b843b72-3a46-482d-b7e8-0b3ad6b1448e.png",
+      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\8b843b72-3a46-482d-b7e8-0b3ad6b1448e.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1204,7 +1225,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 11:16:33 GMT"
+          "Value": "Sun, 18 May 2025 22:47:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1227,8 +1248,90 @@
       ]
     },
     {
+      "Route": "uploads/bb33759d-061a-4986-abe1-4236e2866cac.ep4ml9ijvn.jpg",
+      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\bb33759d-061a-4986-abe1-4236e2866cac.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "818437"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rmU9Z2TRVObCw4X6yYIvpMlPjXAPiFqcTQtohCtULT8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 23:11:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ep4ml9ijvn"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/bb33759d-061a-4986-abe1-4236e2866cac.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rmU9Z2TRVObCw4X6yYIvpMlPjXAPiFqcTQtohCtULT8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/bb33759d-061a-4986-abe1-4236e2866cac.jpg",
+      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\bb33759d-061a-4986-abe1-4236e2866cac.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "818437"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rmU9Z2TRVObCw4X6yYIvpMlPjXAPiFqcTQtohCtULT8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 23:11:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rmU9Z2TRVObCw4X6yYIvpMlPjXAPiFqcTQtohCtULT8="
+        }
+      ]
+    },
+    {
       "Route": "uploads/c0fbc134-10d1-4ccb-9645-22df55dd1fbc.jpg",
-      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\c0fbc134-10d1-4ccb-9645-22df55dd1fbc.jpg",
+      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\c0fbc134-10d1-4ccb-9645-22df55dd1fbc.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1249,7 +1352,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 18:07:19 GMT"
+          "Value": "Sun, 18 May 2025 22:47:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1265,7 +1368,7 @@
     },
     {
       "Route": "uploads/c0fbc134-10d1-4ccb-9645-22df55dd1fbc.m9tkopgd7w.jpg",
-      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\c0fbc134-10d1-4ccb-9645-22df55dd1fbc.jpg",
+      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\c0fbc134-10d1-4ccb-9645-22df55dd1fbc.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1286,7 +1389,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 18:07:19 GMT"
+          "Value": "Sun, 18 May 2025 22:47:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1310,7 +1413,7 @@
     },
     {
       "Route": "uploads/e1c7eaa8-b875-419a-ae2b-96d56b60a061.png",
-      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\e1c7eaa8-b875-419a-ae2b-96d56b60a061.png",
+      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\e1c7eaa8-b875-419a-ae2b-96d56b60a061.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1331,7 +1434,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 11:16:33 GMT"
+          "Value": "Sun, 18 May 2025 22:47:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1347,7 +1450,7 @@
     },
     {
       "Route": "uploads/e1c7eaa8-b875-419a-ae2b-96d56b60a061.ytlwqbc5g4.png",
-      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\e1c7eaa8-b875-419a-ae2b-96d56b60a061.png",
+      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\e1c7eaa8-b875-419a-ae2b-96d56b60a061.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1368,7 +1471,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 11:16:33 GMT"
+          "Value": "Sun, 18 May 2025 22:47:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1392,7 +1495,7 @@
     },
     {
       "Route": "uploads/f44fd932-85f4-4971-aff4-9036bc66fbb5.png",
-      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\f44fd932-85f4-4971-aff4-9036bc66fbb5.png",
+      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\f44fd932-85f4-4971-aff4-9036bc66fbb5.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1413,7 +1516,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 11:16:33 GMT"
+          "Value": "Sun, 18 May 2025 22:47:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1429,7 +1532,7 @@
     },
     {
       "Route": "uploads/f44fd932-85f4-4971-aff4-9036bc66fbb5.ytlwqbc5g4.png",
-      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\sourceCode\\Rent_it\\RentApp\\RentApp.Server\\wwwroot\\uploads\\f44fd932-85f4-4971-aff4-9036bc66fbb5.png",
+      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\f44fd932-85f4-4971-aff4-9036bc66fbb5.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1450,7 +1553,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 11:16:33 GMT"
+          "Value": "Sun, 18 May 2025 22:47:47 GMT"
         },
         {
           "Name": "Cache-Control",
