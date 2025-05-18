@@ -1,0 +1,15 @@
+<div class="details-container" *ngIf="product">
+  <button class="back-btn" (click)="goBack()">Înapoi la produse</button>
+  <div class="details-content">
+    <img [src]="product.imagePath" [alt]="product.name" class="details-image" *ngIf="product.imagePath">
+    <div class="details-info">
+      <h2>{{ product.name }}</h2>
+      <p><strong>Categorie:</strong> {{ product.category }}</p>
+      <p><strong>Descriere:</strong> {{ product.description }}</p>
+      <p><strong>Preț/zi:</strong> {{ product.pricePerDay }} RON</p>
+      <p><strong>Disponibil:</strong> {{ product.available ? 'Da' : 'Nu' }}</p>
+      <p><strong>Listat de:</strong> {{ product.userName }}</p>
+      <p *ngIf="product.telephoneNumber"><strong>Telefon:</strong> {{ product.telephoneNumber }}</p>
+    </div>
+  </div>
+</div>
