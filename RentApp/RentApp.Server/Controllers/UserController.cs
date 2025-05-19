@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using RentApp.Data;
+using RentApp.Models;
+using RentApp.Server.Models;
 using RentApp.Server.Models.DTO.User;
 using System.Security.Claims;
 
@@ -98,23 +100,81 @@ namespace RentApp.Controllers
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             return userId != null ? int.Parse(userId) : (int?)null;
         }
-
-        // DELETE: api/user
-        [HttpDelete]
+        [Authorize]
+        [HttpDelete("delete-account")]
         public async Task<IActionResult> DeleteAccount()
         {
             var userId = GetUserId();
             if (userId == null)
                 return Unauthorized(new { error = "Neautorizat" });
 
-            var user = await _context.Users.FindAsync(userId);
-            if (user == null)
-                return NotFound(new { error = "Utilizatorul nu a fost gasit." });
+            using var transaction = await _context.Database.BeginTransactionAsync();
 
-            _context.Users.Remove(user);
-            await _context.SaveChangesAsync();
+            try
+            {
+                var user = await _context.Users
+                    .Include(u => u.Rentals)          // Rentals ale user-ului
+                    .Include(u => u.Products)         // Produsele user-ului
+                        .ThenInclude(p => p.Rentals)  // Rentals ale produselor
+                    .Include(u => u.Products)
+                        .ThenInclude(p => p.Reviews)  // Reviews ale produselor
+                    .Include(u => u.Rentals)
+                    .ThenInclude(r => r.product)
+                    .FirstOrDefaultAsync(u => u.UserId == userId);
 
-            return Ok(new { message = "Contul a fost sters cu succes" });
+                if (user == null)
+                    return NotFound(new { error = "Utilizatorul nu a fost gasit" });
+
+                //  Reviews scrise de user
+                var reviewsWrittenByUser = await _context.Reviews.Where(r => r.UserId == userId).ToListAsync();
+                _context.Reviews.RemoveRange(reviewsWrittenByUser);
+
+                // Favorite legate de user
+                var favoritesByUser = await _context.Set<Favorite>().Where(f => f.UserId == userId).ToListAsync();
+                _context.Set<Favorite>().RemoveRange(favoritesByUser);
+
+                //  Favorites legate de produsele user-ului
+                var productIds = user.Products.Select(p => p.Id).ToList();
+                var favoritesForProducts = await _context.Set<Favorite>().Where(f => productIds.Contains(f.ProductId)).ToListAsync();
+                _context.Set<Favorite>().RemoveRange(favoritesForProducts);
+
+                // Reviews pentru produsele user-ului
+                var reviewsForProducts = user.Products.SelectMany(p => p.Reviews ?? new List<Review>()).ToList();
+                _context.Reviews.RemoveRange(reviewsForProducts);
+
+                //  Rentals legate de produse user-ului
+                var rentalsForProducts = user.Products.SelectMany(p => p.Rentals ?? new List<Rental>()).ToList();
+                _context.Rentals.RemoveRange(rentalsForProducts);
+
+                // Rentals ale user-ului 
+                _context.Rentals.RemoveRange(user.Rentals);
+
+                // produsele user-ului
+                _context.Products.RemoveRange(user.Products);
+
+
+                _context.Users.Remove(user);
+
+                await _context.SaveChangesAsync();
+                await transaction.CommitAsync();
+
+                return Ok(new { message = "Contul a fost sters cu succes" });
+            }
+            catch (Exception ex)
+            {
+                await transaction.RollbackAsync();
+
+                Console.WriteLine("Eroare la stergere cont:");
+                Exception inner = ex;
+                while (inner != null)
+                {
+                    Console.WriteLine(inner.Message);
+                    inner = inner.InnerException;
+                }
+
+                return StatusCode(500, new { error = "Eroare la stergerea contului", details = ex.Message });
+            }
         }
     }
 }
+

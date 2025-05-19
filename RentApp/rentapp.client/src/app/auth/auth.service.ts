@@ -110,4 +110,22 @@ export class AuthService {
       return throwError(() => new Error('A aparut o eroare'));
     }
   }
+  deleteAccount(): Observable<any> {
+    const token = this.getToken();
+    if (!token) {
+      return throwError(() => new Error('Token invalid.'));
+    }
+
+    return this.http.delete(`${environment.apiUrl}/User/delete-account`, {
+      headers: new HttpHeaders({
+        Authorization: `Bearer ${token}`
+      })
+    }).pipe(
+      tap(() => {
+        this.logout();
+      }),
+      catchError(this.handleError)
+    );
+  }
+
 }

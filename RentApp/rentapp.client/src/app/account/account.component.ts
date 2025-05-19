@@ -66,6 +66,19 @@ export class AccountComponent implements OnInit {
   goToMyRentals() {
     this.router.navigate(['/rentals/my']);
   }
+  deleteAccount() {
+    if (confirm('Sigur doriți să ștergeți contul? Această acțiune este permanentă și va șterge toate datele asociate.')) {
+      this.authService.deleteAccount().subscribe({
+        next: () => {
+          this.router.navigate(['/login']); // Redirect după logout
+        },
+        error: (error) => {
+          console.error('Eroare la ștergerea contului:', error);
+          this.message = error.error?.message || 'Eroare la ștergerea contului. Te rugăm să încerci din nou.';
+        }
+      });
+    }
+  }
 
 
 }
