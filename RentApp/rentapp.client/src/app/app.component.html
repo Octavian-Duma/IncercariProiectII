@@ -2,6 +2,7 @@
   <div style="display: flex; gap: 10px;">
     <a routerLink="/products">Produse</a>
     <a routerLink="/create" *ngIf="authService.isLoggedIn()">Adaugă produs</a>
+    <a routerLink="/favorites" *ngIf="authService.isLoggedIn()">Produse favorite</a>
   </div>
 
   <div *ngIf="userName; else guestLinks" style="display: flex; gap: 10px; align-items: center;">

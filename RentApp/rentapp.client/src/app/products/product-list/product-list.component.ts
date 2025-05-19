@@ -4,7 +4,7 @@ import { Product } from '../../models/Product';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
-import { FavoriteService } from '../../services/FavoriteService';
+import { FavoriteService } from '../../favorites/FavoriteService';
 import { AuthService } from '../../auth/auth.service';
 import { forkJoin, of } from 'rxjs';
 

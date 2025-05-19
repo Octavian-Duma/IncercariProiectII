@@ -86,7 +86,7 @@ export class AuthService {
 
     const body = { oldPassword: currentPassword, newPassword };
 
-    return this.http.put(`${this.apiUrl}/change-password`, body, {
+    return this.http.put(`${environment.apiUrl}/user/change-password`, body, {
       headers: new HttpHeaders({
         'Content-Type': 'application/json',
         Authorization: `Bearer ${token}`

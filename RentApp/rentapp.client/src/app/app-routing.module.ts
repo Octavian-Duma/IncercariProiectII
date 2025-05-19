@@ -1,26 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './auth/login/login.component';
-import { RegisterComponent } from './auth/register/register.component';
-import { ProductListComponent } from './products/product-list/product-list.component';
-import { ProductDetailsComponent } from './products/product-details/product-details.component';
-import { ProductFormComponent } from './products/product-form/product-form.component';
-import { AccountComponent } from './account/account.component';
-import { EditAccountComponent } from './account/edit-account/edit-account.component';
-import { MyRentalsComponent } from './rental/myrentals/myrentals.component';
-import { RentProductComponent } from './rental/rent-product/rent-product.component';
+import { AuthGuard } from './auth/auth.guard';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
-  { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent },
-  { path: 'products', component: ProductListComponent },
-  { path: 'products/:id', component: ProductDetailsComponent },
-  { path: 'create', component: ProductFormComponent },
-  { path: 'account', component: AccountComponent },
-  { path: 'edit-account', component: EditAccountComponent },
-  { path: 'rentals/my', component: MyRentalsComponent },
-  { path: 'rent/:id', component: RentProductComponent }
+  { path: 'login', loadComponent: () => import('./auth/login/login.component').then(m => m.LoginComponent) },
+  { path: 'register', loadComponent: () => import('./auth/register/register.component').then(m => m.RegisterComponent) },
+  { path: 'products', loadComponent: () => import('./products/product-list/product-list.component').then(m => m.ProductListComponent) },
+  { path: 'products/:id', loadComponent: () => import('./products/product-details/product-details.component').then(m => m.ProductDetailsComponent) },
+  { path: 'create', loadComponent: () => import('./products/product-form/product-form.component').then(m => m.ProductFormComponent), canActivate: [AuthGuard] },
+  { path: 'account', loadComponent: () => import('./account/account.component').then(m => m.AccountComponent), canActivate: [AuthGuard] },
+  { path: 'edit-account', loadComponent: () => import('./account/edit-account/edit-account.component').then(m => m.EditAccountComponent), canActivate: [AuthGuard] },
+  { path: 'rentals/my', loadComponent: () => import('./rental/myrentals/myrentals.component').then(m => m.MyRentalsComponent), canActivate: [AuthGuard] },
+  { path: 'rent/:id', loadComponent: () => import('./rental/rent-product/rent-product.component').then(m => m.RentProductComponent), canActivate: [AuthGuard] },
+  { path: 'favorites', loadComponent: () => import('./favorites/favorites.component').then(m => m.FavoritesComponent), canActivate: [AuthGuard] }
 ];
 
 @NgModule({

@@ -1,7 +1,56 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\rentapp.client.esproj|c:\\facultate\\an 3\\sem 2\\ii\\proiect\\personalworktest\\rentapp\\rentapp.client\\src\\app\\favorites\\favorites.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\rentapp.client.esproj|solutionrelative:rentapp.client\\src\\app\\favorites\\favorites.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\rentapp.client.esproj|c:\\facultate\\an 3\\sem 2\\ii\\proiect\\personalworktest\\rentapp\\rentapp.client\\src\\app\\favorites\\favorites.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\rentapp.client.esproj|solutionrelative:rentapp.client\\src\\app\\favorites\\favorites.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\rentapp.client.esproj|c:\\facultate\\an 3\\sem 2\\ii\\proiect\\personalworktest\\rentapp\\rentapp.client\\src\\app\\products\\product-list\\product-list.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\rentapp.client.esproj|solutionrelative:rentapp.client\\src\\app\\products\\product-list\\product-list.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\rentapp.client.esproj|c:\\facultate\\an 3\\sem 2\\ii\\proiect\\personalworktest\\rentapp\\rentapp.client\\src\\app\\favorites\\favorites.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\rentapp.client.esproj|solutionrelative:rentapp.client\\src\\app\\favorites\\favorites.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\rentapp.client.esproj|c:\\facultate\\an 3\\sem 2\\ii\\proiect\\personalworktest\\rentapp\\rentapp.client\\src\\app\\products\\product-list\\product-list.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\rentapp.client.esproj|solutionrelative:rentapp.client\\src\\app\\products\\product-list\\product-list.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\rentapp.client.esproj|c:\\facultate\\an 3\\sem 2\\ii\\proiect\\personalworktest\\rentapp\\rentapp.client\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\rentapp.client.esproj|solutionrelative:rentapp.client\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\rentapp.client.esproj|c:\\facultate\\an 3\\sem 2\\ii\\proiect\\personalworktest\\rentapp\\rentapp.client\\src\\app\\models\\favorite.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\rentapp.client.esproj|solutionrelative:rentapp.client\\src\\app\\models\\favorite.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\rentapp.client.esproj|c:\\facultate\\an 3\\sem 2\\ii\\proiect\\personalworktest\\rentapp\\rentapp.client\\src\\app\\favorites\\favoriteservice.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\rentapp.client.esproj|solutionrelative:rentapp.client\\src\\app\\favorites\\favoriteservice.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\rentapp.client.esproj|c:\\facultate\\an 3\\sem 2\\ii\\proiect\\personalworktest\\rentapp\\rentapp.client\\src\\app\\app-routing.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\rentapp.client.esproj|solutionrelative:rentapp.client\\src\\app\\app-routing.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\rentapp.client.esproj|c:\\facultate\\an 3\\sem 2\\ii\\proiect\\personalworktest\\rentapp\\rentapp.client\\src\\app\\auth\\auth.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\rentapp.client.esproj|solutionrelative:rentapp.client\\src\\app\\auth\\auth.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\rentapp.client.esproj|c:\\facultate\\an 3\\sem 2\\ii\\proiect\\personalworktest\\rentapp\\rentapp.client\\src\\app\\auth\\auth.guard.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\rentapp.client.esproj|solutionrelative:rentapp.client\\src\\app\\auth\\auth.guard.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\rentapp.client.esproj|c:\\facultate\\an 3\\sem 2\\ii\\proiect\\personalworktest\\rentapp\\rentapp.client\\src\\app\\app.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\rentapp.client.esproj|solutionrelative:rentapp.client\\src\\app\\app.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,6 +75,162 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "product-list.component.html",
+              "DocumentMoniker": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\products\\product-list\\product-list.component.html",
+              "RelativeDocumentMoniker": "rentapp.client\\src\\app\\products\\product-list\\product-list.component.html",
+              "ToolTip": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\products\\product-list\\product-list.component.html",
+              "RelativeToolTip": "rentapp.client\\src\\app\\products\\product-list\\product-list.component.html",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-05-19T13:43:34.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "product-list.component.css",
+              "DocumentMoniker": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\products\\product-list\\product-list.component.css",
+              "RelativeDocumentMoniker": "rentapp.client\\src\\app\\products\\product-list\\product-list.component.css",
+              "ToolTip": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\products\\product-list\\product-list.component.css",
+              "RelativeToolTip": "rentapp.client\\src\\app\\products\\product-list\\product-list.component.css",
+              "ViewState": "AgIAAEUBAAAAAAAAAAAkwG4BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-19T13:36:56.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "app-routing.module.ts",
+              "DocumentMoniker": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\app-routing.module.ts",
+              "RelativeDocumentMoniker": "rentapp.client\\src\\app\\app-routing.module.ts",
+              "ToolTip": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\app-routing.module.ts",
+              "RelativeToolTip": "rentapp.client\\src\\app\\app-routing.module.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-05-19T12:45:11.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "auth.service.ts",
+              "DocumentMoniker": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\auth\\auth.service.ts",
+              "RelativeDocumentMoniker": "rentapp.client\\src\\app\\auth\\auth.service.ts",
+              "ToolTip": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\auth\\auth.service.ts",
+              "RelativeToolTip": "rentapp.client\\src\\app\\auth\\auth.service.ts",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAuwGAAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-05-19T12:25:37.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "favorites.component.ts",
+              "DocumentMoniker": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\favorites\\favorites.component.ts",
+              "RelativeDocumentMoniker": "rentapp.client\\src\\app\\favorites\\favorites.component.ts",
+              "ToolTip": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\favorites\\favorites.component.ts",
+              "RelativeToolTip": "rentapp.client\\src\\app\\favorites\\favorites.component.ts",
+              "ViewState": "AgIAABQAAAAAAAAAAAAuwC0AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-05-19T12:39:01.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "favorites.component.html",
+              "DocumentMoniker": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\favorites\\favorites.component.html",
+              "RelativeDocumentMoniker": "rentapp.client\\src\\app\\favorites\\favorites.component.html",
+              "ToolTip": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\favorites\\favorites.component.html",
+              "RelativeToolTip": "rentapp.client\\src\\app\\favorites\\favorites.component.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-05-19T12:42:31.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "favorites.component.css",
+              "DocumentMoniker": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\favorites\\favorites.component.css",
+              "RelativeDocumentMoniker": "rentapp.client\\src\\app\\favorites\\favorites.component.css",
+              "ToolTip": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\favorites\\favorites.component.css",
+              "RelativeToolTip": "rentapp.client\\src\\app\\favorites\\favorites.component.css",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAkwH8AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-19T12:44:03.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "app.module.ts",
+              "DocumentMoniker": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\app.module.ts",
+              "RelativeDocumentMoniker": "rentapp.client\\src\\app\\app.module.ts",
+              "ToolTip": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\app.module.ts",
+              "RelativeToolTip": "rentapp.client\\src\\app\\app.module.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-05-19T12:45:41.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "auth.guard.ts",
+              "DocumentMoniker": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\auth\\auth.guard.ts",
+              "RelativeDocumentMoniker": "rentapp.client\\src\\app\\auth\\auth.guard.ts",
+              "ToolTip": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\auth\\auth.guard.ts",
+              "RelativeToolTip": "rentapp.client\\src\\app\\auth\\auth.guard.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-05-19T12:49:49.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Favorite.ts",
+              "DocumentMoniker": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\models\\Favorite.ts",
+              "RelativeDocumentMoniker": "rentapp.client\\src\\app\\models\\Favorite.ts",
+              "ToolTip": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\models\\Favorite.ts",
+              "RelativeToolTip": "rentapp.client\\src\\app\\models\\Favorite.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-05-19T13:02:54.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FavoriteService.ts",
+              "DocumentMoniker": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\favorites\\FavoriteService.ts",
+              "RelativeDocumentMoniker": "rentapp.client\\src\\app\\favorites\\FavoriteService.ts",
+              "ToolTip": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\favorites\\FavoriteService.ts",
+              "RelativeToolTip": "rentapp.client\\src\\app\\favorites\\FavoriteService.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-05-19T12:35:17.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "app.component.html",
+              "DocumentMoniker": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\app.component.html",
+              "RelativeDocumentMoniker": "rentapp.client\\src\\app\\app.component.html",
+              "ToolTip": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\app.component.html",
+              "RelativeToolTip": "rentapp.client\\src\\app\\app.component.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-05-19T12:32:23.215Z",
+              "EditorCaption": ""
             }
           ]
         }
