@@ -603,3 +603,4 @@ C:\Facultate\An 3\Sem 2\II\Proiect\PersonalWorkTest\RentApp\RentApp.Server\obj\D
 C:\Facultate\An 3\Sem 2\II\Proiect\PersonalWorkTest\RentApp\RentApp.Server\obj\Debug\net8.0\RentApp.Server.pdb
 C:\Facultate\An 3\Sem 2\II\Proiect\PersonalWorkTest\RentApp\RentApp.Server\obj\Debug\net8.0\RentApp.Server.genruntimeconfig.cache
 C:\Facultate\An 3\Sem 2\II\Proiect\PersonalWorkTest\RentApp\RentApp.Server\obj\Debug\net8.0\ref\RentApp.Server.dll
+C:\Facultate\An 3\Sem 2\II\Proiect\PersonalWorkTest\RentApp\RentApp.Server\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

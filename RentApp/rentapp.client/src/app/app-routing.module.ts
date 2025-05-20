@@ -13,7 +13,9 @@ const routes: Routes = [
   { path: 'edit-account', loadComponent: () => import('./account/edit-account/edit-account.component').then(m => m.EditAccountComponent), canActivate: [AuthGuard] },
   { path: 'rentals/my', loadComponent: () => import('./rental/myrentals/myrentals.component').then(m => m.MyRentalsComponent), canActivate: [AuthGuard] },
   { path: 'rent/:id', loadComponent: () => import('./rental/rent-product/rent-product.component').then(m => m.RentProductComponent), canActivate: [AuthGuard] },
-  { path: 'favorites', loadComponent: () => import('./favorites/favorites.component').then(m => m.FavoritesComponent), canActivate: [AuthGuard] }
+  { path: 'favorites', loadComponent: () => import('./favorites/favorites.component').then(m => m.FavoritesComponent), canActivate: [AuthGuard] },
+  { path: 'my-products', loadComponent: () => import('./products/my-products/my-products.component').then(m => m.MyProductsComponent), canActivate: [AuthGuard] },
+  { path: 'edit-product/:id', loadComponent: () => import('./products/product-edit/product-edit.component').then(m => m.EditProductComponent), canActivate: [AuthGuard] }
 ];
 
 @NgModule({

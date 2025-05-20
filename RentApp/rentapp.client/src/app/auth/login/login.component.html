@@ -28,7 +28,7 @@
                  email
                  #emailInput="ngModel" />
           <div *ngIf="emailInput.invalid && emailInput.touched" class="validation-error">
-            Te rugăm să introduci un email valid.
+            Te rugăm să introduci un e-mail valid!
           </div>
         </div>
         <div class="form-group">
@@ -41,7 +41,7 @@
                  minlength="6"
                  #passwordInput="ngModel" />
           <div *ngIf="passwordInput.invalid && passwordInput.touched" class="validation-error">
-            Parola trebuie să aibă minim 6 caractere.
+            Parola trebuie să conțină minim 8 caractere, o literă mare, o cifră și un caracter special!
           </div>
         </div>
         <button type="submit" [disabled]="loginForm.invalid">Intră în cont</button>

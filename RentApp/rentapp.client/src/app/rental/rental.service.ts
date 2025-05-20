@@ -7,7 +7,7 @@ import { RentalRequest, RentalResponse } from '../models/rental.model';
   providedIn: 'root'
 })
 export class RentalService {
-  private apiUrl = 'https://localhost:7020/api/rentals';
+  private apiUrl = '/api/rentals';
 
   constructor(private http: HttpClient) { }
 
@@ -22,8 +22,13 @@ export class RentalService {
   cancelRental(id: number): Observable<any> {
     return this.http.delete(`${this.apiUrl}/${id}`);
   }
+
   getProductDetails(productId: number): Observable<{ id: number; name: string; pricePerDay: number; description: string; available: boolean }> {
     return this.http.get<{ id: number; name: string; pricePerDay: number; description: string; available: boolean }>(`${this.apiUrl}/product/${productId}`);
   }
 
+  // NOU: vezi cererile pentru un produs
+  getRequestsForProduct(productId: number): Observable<any[]> {
+    return this.http.get<any[]>(`${this.apiUrl}/requests/${productId}`);
+  }
 }

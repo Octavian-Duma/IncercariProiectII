@@ -6,6 +6,9 @@ import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthInterceptor } from './auth/auth.interceptor';
+import { MyProductsComponent } from './products/my-products/my-products.component';
+import { ProductDetailsComponent } from './products/product-details/product-details.component';
+import { EditProductComponent } from './products/product-edit/product-edit.component';
 
 @NgModule({
   imports: [
@@ -24,6 +27,8 @@ import { AuthInterceptor } from './auth/auth.interceptor';
       multi: true
     }
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+
+
 })
 export class AppModule { }

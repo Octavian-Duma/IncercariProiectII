@@ -7,6 +7,9 @@ namespace RentApp.Server.Models
         [Display(Name = "Electronice")]
         Electronice,
 
+        [Display(Name = "Electrocasnice")]
+        Electrocasnice,
+
         [Display(Name = "Mobilier")]
         Mobilier,
 
@@ -25,11 +28,23 @@ namespace RentApp.Server.Models
         [Display(Name = "Jucarii")]
         Jucarii,
 
-        [Display(Name = "Sport")]
-        SportSiTimpLiber,
+        [Display(Name ="Audio")]
+        Audio,
 
-        [Display(Name = "Audio-Video")]
-        EchipamenteAudioVideo,
+        [Display(Name = "Video")]
+        Video,
+
+        [Display(Name = "Sport")]
+        Sport,
+
+        [Display(Name = "Bucatarie")]
+        Bucatarie,
+
+        [Display(Name = "Gradina")]
+        Gradina,
+
+        [Display(Name = "Constructii")]
+        Constructii,
 
         [Display(Name = "Altele")]
         Altele

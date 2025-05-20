@@ -26,7 +26,7 @@
   </div>
   <div class="button-group">
     <button type="button" (click)="showDetails = !showDetails" [class.active]="showDetails">
-      Detalii cont
+      Detaliile contului
     </button>
     <button type="button" (click)="showChangePassword = !showChangePassword" [class.active]="showChangePassword">
       Schimbă parola
@@ -34,9 +34,11 @@
     <button type="button" (click)="goToMyRentals()">
       Închirierile tale
     </button>
+    <button type="button" (click)="goToMyProducts()">
+      Produsele mele
+    </button>
     <button type="button" class="delete-btn" (click)="deleteAccount()">Șterge contul</button>
   </div>
-</div>
 
 <ng-template #notLogged>
   <div class="not-logged-in">

@@ -65,13 +65,12 @@
               <ng-container *ngFor="let star of [1,2,3,4,5]">
                 <span class="star small" [class.filled]="star <= review.stars">&#9733;</span>
               </ng-container>
-              <span class="review-date">{{ review.date | date:'short' }}</span>
+              <span class="review-date">{{ review.date ? (review.date | date:'short') : '' }}</span>
             </div>
             <div class="review-text">{{ review.comment }}</div>
           </div>
         </div>
       </div>
-      <!-- END SECȚIUNE RATING ȘI RECENZII -->
 
     </div>
 

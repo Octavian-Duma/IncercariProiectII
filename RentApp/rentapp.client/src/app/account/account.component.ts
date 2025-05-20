@@ -79,6 +79,9 @@ export class AccountComponent implements OnInit {
       });
     }
   }
+  goToMyProducts(): void {
+    this.router.navigate(['/my-products']);
+  }
 
 
 }

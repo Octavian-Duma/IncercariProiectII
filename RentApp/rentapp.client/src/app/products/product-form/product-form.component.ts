@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angula
 import { ProductService } from '../product.service';
 import { Router, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   standalone: true,
@@ -20,7 +21,8 @@ export class ProductFormComponent implements OnInit {
   constructor(
     private fb: FormBuilder,
     private productService: ProductService,
-    private router: Router
+    private router: Router,
+    private route: ActivatedRoute
   ) {
     this.form = this.fb.group({
       name: ['', [Validators.required, Validators.minLength(3)]],
@@ -41,6 +43,14 @@ export class ProductFormComponent implements OnInit {
     this.productService.getLocations().subscribe({
       next: (locs) => this.locations = locs,
       error: () => this.locations = []
+    });
+    this.route.queryParams.subscribe(params => {
+      if (params['edit']) {
+        const productId = +params['edit'];
+        this.productService.getById(productId).subscribe(product => {
+          this.form.patchValue(product);
+        });
+      }
     });
   }
 

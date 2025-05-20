@@ -129,4 +129,27 @@ export class ProductService {
   getAverageRating(productId: number): Observable<{ average: number }> {
     return this.http.get<{ average: number }>(`${this.reviewsUrl}/product/${productId}/average`);
   }
+  delete(productId: number): Observable<any> {
+    return this.http.delete(`/api/products/${productId}`);
+  }
+  update(id: number, product: Product, imageFile: File | null): Observable<any> {
+    const formData = new FormData();
+    formData.append('name', product.name);
+    formData.append('category', product.category);
+    formData.append('location', product.location);
+    formData.append('description', product.description);
+    formData.append('pricePerDay', product.pricePerDay.toString());
+    formData.append('available', product.available.toString());
+
+    if (imageFile) {
+      formData.append('imageFile', imageFile, imageFile.name);
+    }
+
+    return this.http.put<any>(`/api/products/${id}`, formData, {
+      headers: new HttpHeaders({
+        'Authorization': `Bearer ${localStorage.getItem('token')}`
+      })
+    });
+  }
+
 }
