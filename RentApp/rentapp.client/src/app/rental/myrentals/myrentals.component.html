@@ -6,10 +6,16 @@
   <div class="rentals-container">
     <h2 class="section-title">Istoric închirieri</h2>
 
+    <div *ngIf="loading" class="loader-overlay">
+      <div class="loader"></div>
+    </div>
+
     <p class="message" *ngIf="message">{{ message }}</p>
 
     <div *ngIf="rentals.length > 0; else noRentals">
-      <div class="rental-card" *ngFor="let rental of rentals">
+      <div class="rental-card"
+           *ngFor="let rental of rentals"
+           [class.selected]="openReviewForRentalId === rental.rentalId">
         <h3 class="product-name">{{ rental.productName || 'Produs necunoscut' }}</h3>
         <div class="rental-details">
           <div class="detail-item">
@@ -25,6 +31,15 @@
             <span [ngClass]="rental.status.toLowerCase()">{{ rental.status }}</span>
           </div>
         </div>
+        <div class="rental-actions">
+          <button *ngIf="rental.status === 'Finalizat'" (click)="showReviewPopup(rental.rentalId)" class="review-btn">Adaugă recenzie</button>
+          <button (click)="confirmDelete(rental.rentalId)" class="delete-btn">Șterge închirierea</button>
+        </div>
+        <app-review *ngIf="openReviewForRentalId === rental.rentalId"
+                    [productId]="rental.productId"
+                    (submitted)="handleReviewSubmit($event, rental)"
+                    (canceled)="closeReviewPopup()">
+        </app-review>
       </div>
     </div>
 

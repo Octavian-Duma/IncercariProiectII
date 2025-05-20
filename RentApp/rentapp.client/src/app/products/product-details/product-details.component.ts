@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { ProductService } from '../product.service';
 import { Product } from '../../models/Product';
+import { Review } from '../../models/Review';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -15,7 +16,9 @@ export class ProductDetailsComponent implements OnInit {
   product: Product | null = null;
   isLoading: boolean = true;
   errorMessage: string = '';
-  debugMode: boolean = true;
+  reviews: Review[] = [];
+  averageRating: number = 0;
+  Math = Math;
 
   constructor(
     private route: ActivatedRoute,
@@ -27,33 +30,42 @@ export class ProductDetailsComponent implements OnInit {
     const id = Number(this.route.snapshot.paramMap.get('id'));
     if (id) {
       this.loadProduct(id);
+      this.loadReviews(id);
+      this.loadAverageRating(id);
     }
   }
 
   loadProduct(id: number): void {
     this.isLoading = true;
-
-    // Folosim getById direct
     this.productService.getById(id).subscribe({
       next: (response: any) => {
-        console.log('Date produs primite:', response);
-
-
         let productData: any;
         if (response && response.product) {
           productData = response.product;
         } else {
           productData = response;
         }
-
         this.product = this.mapToProduct(productData);
         this.isLoading = false;
       },
       error: (error) => {
-        console.error('Eroare la încărcarea produsului:', error);
         this.errorMessage = 'Nu am putut încărca detaliile produsului.';
         this.isLoading = false;
       }
+    });
+  }
+
+  loadReviews(productId: number): void {
+    this.productService.getReviews(productId).subscribe({
+      next: (reviews) => this.reviews = reviews,
+      error: () => this.reviews = []
+    });
+  }
+
+  loadAverageRating(productId: number): void {
+    this.productService.getAverageRating(productId).subscribe({
+      next: (res) => this.averageRating = res.average,
+      error: () => this.averageRating = 0
     });
   }
 
@@ -76,4 +88,5 @@ export class ProductDetailsComponent implements OnInit {
   goBack(): void {
     this.router.navigate(['/products']);
   }
+  
 }

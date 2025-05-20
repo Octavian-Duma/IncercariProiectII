@@ -3,11 +3,11 @@
     "Name": "New Profile",
     "Projects": [
       {
-        "Path": "rentapp.client\\rentapp.client.esproj",
+        "Path": "RentApp.Server\\RentApp.Server.csproj",
         "Action": "Start"
       },
       {
-        "Path": "RentApp.Server\\RentApp.Server.csproj",
+        "Path": "rentapp.client\\rentapp.client.esproj",
         "Action": "Start"
       }
     ]

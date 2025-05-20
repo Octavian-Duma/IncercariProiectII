@@ -9,7 +9,8 @@ import { Review } from '../models/Review';
   providedIn: 'root'
 })
 export class ProductService {
-  private apiUrl = '/api/products'; // Folosim calea relativă pentru a funcționa cu proxy
+  private apiUrl = '/api/products'; // Pentru produse
+  private reviewsUrl = '/api/reviews'; // Pentru recenzii
 
   constructor(private http: HttpClient) { }
 
@@ -117,11 +118,15 @@ export class ProductService {
     return this.http.get<{ product: Product }>(`${this.apiUrl}/${id}`);
   }
 
+ 
+
+  // Obține recenziile pentru un produs
   getReviews(productId: number): Observable<Review[]> {
-    return this.http.get<Review[]>(`${this.apiUrl}/reviews/product/${productId}`);
+    return this.http.get<Review[]>(`${this.reviewsUrl}/product/${productId}`);
   }
 
-  getAverageStars(productId: number): Observable<{ average: number }> {
-    return this.http.get<{ average: number }>(`${this.apiUrl}/reviews/product/${productId}/average`);
+  // Obține media stelelor pentru un produs
+  getAverageRating(productId: number): Observable<{ average: number }> {
+    return this.http.get<{ average: number }>(`${this.reviewsUrl}/product/${productId}/average`);
   }
 }
