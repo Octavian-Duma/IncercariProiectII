@@ -1,7 +1,7 @@
 <div class="product-form-container">
   <div class="product-form-card">
     <div class="form-heading">MODIFICARE PRODUS</div>
-    <form [formGroup]="productForm" (ngSubmit)="submit()" class="product-form">
+    <form *ngIf="productForm" [formGroup]="productForm" (ngSubmit)="submit()" class="product-form">
       <div class="form-group">
         <label class="form-label">Nume produs:</label>
         <input class="form-input" formControlName="name" type="text" />

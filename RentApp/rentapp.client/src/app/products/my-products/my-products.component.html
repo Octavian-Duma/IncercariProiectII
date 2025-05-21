@@ -24,14 +24,23 @@
           </div>
         </div>
         <div *ngIf="openRequestsForProductId === product.id" class="requests-section">
-          <div *ngIf="rentalRequests.length === 0" class="no-requests">Nu există cereri pentru acest produs.</div>
+          <div *ngIf="rentalRequests.length === 0" class="no-requests">
+            Nu există cereri pentru acest produs.
+          </div>
           <div *ngFor="let req of rentalRequests" class="request-card">
             <div><strong>Nume:</strong> {{ req.userName }}</div>
             <div><strong>Email:</strong> {{ req.email }}</div>
             <div><strong>Telefon:</strong> {{ req.telephoneNumber }}</div>
-            <div><strong>Perioadă:</strong> {{ req.startDate | date:'shortDate' }} - {{ req.endDate | date:'shortDate' }}</div>
+            <div>
+              <strong>Perioadă:</strong>
+              {{ req.startDate | date:'shortDate' }} - {{ req.endDate | date:'shortDate' }}
+            </div>
+            <div>
+              <strong>Total:</strong> {{ req.totalPrice }} RON
+            </div>
           </div>
         </div>
+
         <div class="rental-actions">
           <button class="edit-btn" (click)="editProduct(product.id)">Modifică produs</button>
           <button class="delete-btn" (click)="deleteProduct(product.id)">Șterge produs</button>

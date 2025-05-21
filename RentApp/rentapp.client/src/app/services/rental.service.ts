@@ -27,8 +27,8 @@ export class RentalService {
     return this.http.get<{ id: number; name: string; pricePerDay: number; description: string; available: boolean }>(`${this.apiUrl}/product/${productId}`);
   }
 
-  // NOU: vezi cererile pentru un produs
+  
   getRequestsForProduct(productId: number): Observable<any[]> {
-    return this.http.get<any[]>(`${this.apiUrl}/requests/${productId}`);
+    return this.http.get<any[]>(`${this.apiUrl}/product/${productId}`);
   }
 }

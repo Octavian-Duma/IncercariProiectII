@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../../services/product.service';
 import { RentalService } from '../../services/rental.service';
+import { UserService } from '../../services/user.service';
 import { Product } from '../../models/ProductModel';
+import { User } from '../../models/UserModel';
 import { AuthService } from '../../services/auth.service';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
-
 
 @Component({
   selector: 'app-my-products',
@@ -17,6 +18,7 @@ import { Router } from '@angular/router';
 export class MyProductsComponent implements OnInit {
   myProducts: Product[] = [];
   allRentals: any[] = [];
+  users: User[] = [];
   openRequestsForProductId: number | null = null;
   rentalRequests: any[] = [];
   message = '';
@@ -26,15 +28,16 @@ export class MyProductsComponent implements OnInit {
   constructor(
     private productService: ProductService,
     private rentalService: RentalService,
+    private userService: UserService,
     private authService: AuthService,
-    private router: Router // <-- adaugă aici
+    private router: Router
   ) { }
-
 
   ngOnInit(): void {
     this.currentUserName = this.authService.getUserName() || '';
     this.loadMyProducts();
     this.loadAllRentals();
+    this.loadUsers();
   }
 
   loadMyProducts(): void {
@@ -53,19 +56,32 @@ export class MyProductsComponent implements OnInit {
     });
   }
 
+  loadUsers(): void {
+    this.userService.getAll().subscribe(users => this.users = users);
+  }
+
   showRequests(productId: number): void {
     if (this.openRequestsForProductId === productId) {
       this.openRequestsForProductId = null;
       return;
     }
     this.openRequestsForProductId = productId;
-    this.rentalService.getRequestsForProduct(productId).subscribe({
-      next: (requests) => this.rentalRequests = requests,
-      error: () => this.rentalRequests = []
-    });
+    // Filtrare locală + mapare user după UserId
+    this.rentalRequests = this.allRentals
+      .filter(r => r.productId === productId)
+      .map(r => {
+        const user = this.users.find(u => u.UserId === r.UserId);
+        return {
+          ...r,
+          userName: user?.Name,
+          email: user?.email,
+          telephoneNumber: user?.telephoneNumber
+        };
+      });
   }
+
   editProduct(productId: number) {
-    this.router.navigate(['/products-edit', productId]);
+    this.router.navigate(['/edit-product', productId]);
   }
   deleteProduct(productId: number): void {
     if (confirm('Ești sigur că vrei să ștergi acest produs?')) {

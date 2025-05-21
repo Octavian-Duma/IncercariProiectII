@@ -31,14 +31,25 @@ export class EditProductComponent implements OnInit {
     this.productService.getCategories().subscribe(cats => this.categories = cats);
     this.productService.getLocations().subscribe(locs => this.locations = locs);
 
+    // Inițializează formularul gol ca să nu dea erori în template
+    this.productForm = this.fb.group({
+      name: ['', Validators.required],
+      category: ['', Validators.required],
+      location: ['', Validators.required],
+      description: ['', Validators.required],
+      pricePerDay: [null, [Validators.required, Validators.min(1)]],
+      available: [false]
+    });
+
+    // Populează formularul cu datele reale când vin din backend
     this.productService.getById(this.productId).subscribe(product => {
-      this.productForm = this.fb.group({
-        name: [product.name, Validators.required],
-        category: [product.category, Validators.required],
-        location: [product.location, Validators.required],
-        description: [product.description, Validators.required],
-        pricePerDay: [product.pricePerDay, [Validators.required, Validators.min(1)]],
-        available: [product.available]
+      this.productForm.patchValue({
+        name: product.name,
+        category: product.category,
+        location: product.location,
+        description: product.description,
+        pricePerDay: product.pricePerDay,
+        available: product.available
       });
     });
   }
