@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FavoriteService } from './FavoriteService';
-import { Favorite } from '../models/Favorite';
+import { FavoriteService } from '../services/favorites.service';
+import { Favorite } from '../models/FavoriteModel';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 

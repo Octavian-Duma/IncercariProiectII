@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { RentalService } from '../rental.service';
-import { RentalRequest } from '../../models/rental.model';
+import { RentalService } from '../../services/rental.service';
+import { RentalRequest } from '../../models/RentalModel';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';

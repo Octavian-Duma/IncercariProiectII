@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RentApp.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fbaf9cb39846b9059a56d3d31464f488c2d75a84")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18b7b90a07eceec5d141217d7c8903d13117ac62")]
 [assembly: System.Reflection.AssemblyProductAttribute("RentApp.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RentApp.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

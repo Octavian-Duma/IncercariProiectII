@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductService } from '../product.service';
-import { Product } from '../../models/Product';
+import { ProductService } from '../../services/product.service';
+import { Product } from '../../models/ProductModel';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
-import { FavoriteService } from '../../favorites/FavoriteService';
-import { AuthService } from '../../auth/auth.service';
+import { FavoriteService } from '../../services/favorites.service';
+import { AuthService } from '../../services/auth.service';
 import { forkJoin, of } from 'rxjs';
 
 @Component({

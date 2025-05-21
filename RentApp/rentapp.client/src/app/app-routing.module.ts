@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: 'create', loadComponent: () => import('./products/product-form/product-form.component').then(m => m.ProductFormComponent), canActivate: [AuthGuard] },
   { path: 'account', loadComponent: () => import('./account/account.component').then(m => m.AccountComponent), canActivate: [AuthGuard] },
   { path: 'edit-account', loadComponent: () => import('./account/edit-account/edit-account.component').then(m => m.EditAccountComponent), canActivate: [AuthGuard] },
-  { path: 'rentals/my', loadComponent: () => import('./rental/myrentals/myrentals.component').then(m => m.MyRentalsComponent), canActivate: [AuthGuard] },
+  { path: 'rentals/my', loadComponent: () => import('./rental/my-rentals/myrentals.component').then(m => m.MyRentalsComponent), canActivate: [AuthGuard] },
   { path: 'rent/:id', loadComponent: () => import('./rental/rent-product/rent-product.component').then(m => m.RentProductComponent), canActivate: [AuthGuard] },
   { path: 'favorites', loadComponent: () => import('./favorites/favorites.component').then(m => m.FavoritesComponent), canActivate: [AuthGuard] },
   { path: 'my-products', loadComponent: () => import('./products/my-products/my-products.component').then(m => m.MyProductsComponent), canActivate: [AuthGuard] },

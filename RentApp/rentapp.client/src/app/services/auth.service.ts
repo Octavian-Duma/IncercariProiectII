@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable, throwError, BehaviorSubject } from 'rxjs';
 import { catchError, tap } from 'rxjs/operators';
 import { environment } from '../../environments/environment';
-import { LoginResponse } from '../models/LoginResponse';
+import { LoginResponse } from '../models/LoginResponseModel';
 
 @Injectable({
   providedIn: 'root'

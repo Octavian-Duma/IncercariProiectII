@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductService } from '../product.service';
-import { RentalService } from '../../rental/rental.service';
-import { Product } from '../../models/Product';
-import { AuthService } from '../../auth/auth.service';
+import { ProductService } from '../../services/product.service';
+import { RentalService } from '../../services/rental.service';
+import { Product } from '../../models/ProductModel';
+import { AuthService } from '../../services/auth.service';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 

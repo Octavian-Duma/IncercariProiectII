@@ -7,7 +7,7 @@
         "Action": "Start"
       },
       {
-        "Path": "rentapp.client\\rentapp.client.esproj",
+        "Path": "rentapp.client\\RentApp.client.esproj",
         "Action": "Start"
       }
     ]

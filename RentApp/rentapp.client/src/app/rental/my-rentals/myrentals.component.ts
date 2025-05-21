@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RentalService } from '../rental.service';
-import { ReviewService } from '../../reviews/review.service';
+import { RentalService } from '../../services/rental.service';
+import { ReviewService } from '../../services/review.service';
 import { ReviewComponent } from '../../reviews/review.component';
 
 @Component({

@@ -2,7 +2,7 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { ReviewService } from './review.service';
+import { ReviewService } from '../services/review.service';
 import { Review } from './review.model';
 
 @Component({
