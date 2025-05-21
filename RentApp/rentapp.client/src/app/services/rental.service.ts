@@ -31,4 +31,12 @@ export class RentalService {
   getRequestsForProduct(productId: number): Observable<any[]> {
     return this.http.get<any[]>(`${this.apiUrl}/product/${productId}`);
   }
+  getAllRentals(): Observable<any[]> {
+    return this.http.get<any[]>('/api/rentals');
+  }
+  getAllRentalsWithUsers(): Observable<any[]> {
+    return this.http.get<any[]>('/api/rentals/all-with-users');
+  }
+
+
 }

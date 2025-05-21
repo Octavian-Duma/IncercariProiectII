@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../../services/product.service';
 import { RentalService } from '../../services/rental.service';
-import { UserService } from '../../services/user.service';
 import { Product } from '../../models/ProductModel';
-import { User } from '../../models/UserModel';
 import { AuthService } from '../../services/auth.service';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
@@ -18,7 +16,6 @@ import { Router } from '@angular/router';
 export class MyProductsComponent implements OnInit {
   myProducts: Product[] = [];
   allRentals: any[] = [];
-  users: User[] = [];
   openRequestsForProductId: number | null = null;
   rentalRequests: any[] = [];
   message = '';
@@ -28,7 +25,6 @@ export class MyProductsComponent implements OnInit {
   constructor(
     private productService: ProductService,
     private rentalService: RentalService,
-    private userService: UserService,
     private authService: AuthService,
     private router: Router
   ) { }
@@ -37,7 +33,6 @@ export class MyProductsComponent implements OnInit {
     this.currentUserName = this.authService.getUserName() || '';
     this.loadMyProducts();
     this.loadAllRentals();
-    this.loadUsers();
   }
 
   loadMyProducts(): void {
@@ -50,14 +45,13 @@ export class MyProductsComponent implements OnInit {
   }
 
   loadAllRentals(): void {
-    this.rentalService.getMyRentals().subscribe({
-      next: (rentals) => this.allRentals = rentals,
+    this.rentalService.getAllRentalsWithUsers().subscribe({
+      next: (rentals) => {
+        this.allRentals = rentals;
+        // console.log('ALL RENTALS:', this.allRentals);
+      },
       error: () => this.allRentals = []
     });
-  }
-
-  loadUsers(): void {
-    this.userService.getAll().subscribe(users => this.users = users);
   }
 
   showRequests(productId: number): void {
@@ -66,23 +60,18 @@ export class MyProductsComponent implements OnInit {
       return;
     }
     this.openRequestsForProductId = productId;
-    // Filtrare locală + mapare user după UserId
+
+    // Filtrare doar după productId, restul vine direct cu info de user!
     this.rentalRequests = this.allRentals
-      .filter(r => r.productId === productId)
-      .map(r => {
-        const user = this.users.find(u => u.UserId === r.UserId);
-        return {
-          ...r,
-          userName: user?.Name,
-          email: user?.email,
-          telephoneNumber: user?.telephoneNumber
-        };
-      });
+      .filter(r => r.productId === productId || r.ProductId === productId);
+
+    // console.log('Cereri pentru produsId:', productId, this.rentalRequests);
   }
 
   editProduct(productId: number) {
     this.router.navigate(['/edit-product', productId]);
   }
+
   deleteProduct(productId: number): void {
     if (confirm('Ești sigur că vrei să ștergi acest produs?')) {
       this.loading = true;

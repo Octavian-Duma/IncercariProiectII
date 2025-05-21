@@ -12,6 +12,10 @@ namespace RentApp.Server.Service
         Task<IEnumerable<RentalListItemDTO>> GetMyRentalsAsync(int userId);
         Task<bool> CancelRentalAsync(int rentalId, int userId);
         Task<ProductRentalDetailsDTO?> GetProductDetailsAsync(int productId);
+        Task<IEnumerable<RentalListItemDTO>> GetAllRentalsAsync();
+        Task<IEnumerable<RentalWithUserDTO>> GetAllRentalsWithUsersAsync();
+
+
     }
     public class RentalService : IRentalService
     {
@@ -102,5 +106,47 @@ namespace RentApp.Server.Service
                 Available = product.Available
             };
         }
+        public async Task<IEnumerable<RentalListItemDTO>> GetAllRentalsAsync()
+        {
+            var rentals = await _context.Rentals
+                .Include(r => r.product)
+                .ToListAsync();
+
+            return rentals.Select(r => new RentalListItemDTO
+            {
+                RentalId = r.RentalId ?? 0,
+                ProductId = r.ProductId,
+                UserId = r.UserId,
+                ProductName = r.product.Name,
+                StartDate = r.StartDate,
+                EndDate = r.EndDate,
+                TotalPrice = r.TotalPrice,
+                Status = r.Status.ToString()
+            });
+        }
+        public async Task<IEnumerable<RentalWithUserDTO>> GetAllRentalsWithUsersAsync()
+        {
+            var rentals = await _context.Rentals
+                .Include(r => r.product)
+                .Include(r => r.user)
+                .ToListAsync();
+
+            return rentals.Select(r => new RentalWithUserDTO
+            {
+                RentalId = r.RentalId ?? 0,
+                ProductId = r.ProductId,
+                UserId = r.UserId,
+                ProductName = r.product.Name,
+                StartDate = r.StartDate,
+                EndDate = r.EndDate,
+                TotalPrice = r.TotalPrice,
+                Status = r.Status.ToString(),
+                UserName = r.user.Name,
+                UserEmail = r.user.email,
+                UserTelephone = r.user.telephoneNumber
+            });
+        }
+
+
     }
 }

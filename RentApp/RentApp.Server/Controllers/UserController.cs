@@ -175,6 +175,23 @@ namespace RentApp.Controllers
                 return StatusCode(500, new { error = "Eroare la stergerea contului", details = ex.Message });
             }
         }
+        [AllowAnonymous] 
+        [HttpGet]
+        public async Task<IActionResult> GetAll()
+        {
+            var users = await _context.Users
+                .Select(u => new
+                {
+                    u.UserId,
+                    u.Name,
+                    u.email,
+                    u.telephoneNumber
+                })
+                .ToListAsync();
+            return Ok(users);
+        }
+
+
     }
 }
 

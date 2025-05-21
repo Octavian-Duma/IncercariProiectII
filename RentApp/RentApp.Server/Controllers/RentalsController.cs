@@ -79,5 +79,21 @@ namespace RentApp.Server.Controllers
 
             return Ok(product);
         }
+        [HttpGet]
+        [Authorize] 
+        public async Task<IActionResult> GetAllRentals()
+        {
+            var rentals = await _rentalService.GetAllRentalsAsync();
+            return Ok(rentals);
+        }
+        [HttpGet("all-with-users")]
+        [Authorize]
+        public async Task<IActionResult> GetAllRentalsWithUsers()
+        {
+            var rentals = await _rentalService.GetAllRentalsWithUsersAsync();
+            return Ok(rentals);
+        }
+
+
     }
 }
