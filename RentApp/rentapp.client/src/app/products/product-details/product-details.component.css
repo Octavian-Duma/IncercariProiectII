@@ -284,3 +284,37 @@
   margin-bottom: 1.2rem;
 }
 
+.review-header-line {
+  font-size: 1.08rem;
+  color: #24496b;
+  margin-bottom: 0.15rem;
+  display: flex;
+  align-items: center;
+  gap: 0.32rem;
+  padding-left: 0.05rem;
+}
+
+.review-stars {
+  color: #ffb700;
+  font-weight: bold;
+  font-size: 1.07rem;
+}
+
+.review-text {
+  font-size: 1rem;
+  color: #333;
+  text-align: left;
+  margin-left: 0; /* aliniat la stânga */
+  padding-left: 0.07rem;
+  padding-top: 0.07rem;
+}
+.review-info-message {
+  background: #f3f6fa;
+  color: #007bbd;
+  padding: 0.38rem 0.8rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  font-size: 0.98rem;
+  text-align: left;
+  font-weight: 500;
+}

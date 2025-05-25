@@ -16,6 +16,7 @@ export class MyRentalsComponent implements OnInit {
   message = '';
   openReviewForRentalId: number | null = null;
   loading: boolean = false;
+  reviewStatus: { [rentalId: number]: 'canReview' | 'alreadyReviewed' | null } = {};
 
   constructor(
     private rentalService: RentalService,
@@ -51,6 +52,13 @@ export class MyRentalsComponent implements OnInit {
 
   showReviewPopup(rentalId: number) {
     this.openReviewForRentalId = rentalId;
+    const rental = this.rentals.find(r => r.rentalId === rentalId);
+    if (rental) {
+      this.reviewStatus[rentalId] = null; 
+      this.reviewService.hasUserReviewed(rental.productId).subscribe(alreadyReviewed => {
+        this.reviewStatus[rentalId] = alreadyReviewed ? 'alreadyReviewed' : 'canReview';
+      });
+    }
   }
 
   closeReviewPopup() {
@@ -65,12 +73,13 @@ export class MyRentalsComponent implements OnInit {
         this.message = 'Recenzia a fost adăugată cu succes!';
         this.closeReviewPopup();
         this.loading = false;
-        setTimeout(() => this.message = '', 3000);
+        setTimeout(() => this.message = '', 5000);
+        this.reviewStatus[rental.rentalId] = 'alreadyReviewed';
       },
-      error: () => {
-        this.message = 'Eroare la adăugarea recenziei.';
+      error: (error) => {
+        this.message = error.error?.message || 'Eroare la adăugarea recenziei.';
         this.loading = false;
-        setTimeout(() => this.message = '', 3000);
+        setTimeout(() => this.message = '', 5000);
       }
     });
   }
@@ -83,14 +92,28 @@ export class MyRentalsComponent implements OnInit {
           this.message = 'Închirierea a fost ștearsă cu succes!';
           this.loadRentals();
           this.loading = false;
-          setTimeout(() => this.message = '', 3000);
+          setTimeout(() => this.message = '', 5000);
         },
-        error: () => {
-          this.message = 'Eroare la ștergerea închirierii.';
+        error: (error) => {
+          // Backend-ul dă mesaj dacă nu poate șterge!
+          this.message = error.error?.message || 'Poți șterge doar o închiriere finalizată sau să anulezi cu minim 3 zile înainte de început!';
           this.loading = false;
-          setTimeout(() => this.message = '', 3000);
+          setTimeout(() => this.message = '', 5000);
         }
       });
     }
+  }
+
+
+
+  getReviewWarningMsg(rentalId: number): string {
+    if (this.reviewStatus[rentalId] === 'alreadyReviewed') {
+      return 'Ai trimis deja o recenzie pentru acest produs. Nu mai poți adăuga alta!';
+    }
+    return '';
+  }
+
+  isReviewLoading(rentalId: number): boolean {
+    return this.reviewStatus[rentalId] == null && this.openReviewForRentalId === rentalId;
   }
 }

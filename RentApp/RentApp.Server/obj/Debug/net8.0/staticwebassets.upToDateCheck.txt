@@ -29,4 +29,5 @@ wwwroot\uploads\c0fbc134-10d1-4ccb-9645-22df55dd1fbc.jpg
 wwwroot\uploads\e0ec9b3c-c8a7-45b9-a992-2a924ec64f28.jpg
 wwwroot\uploads\e1c7eaa8-b875-419a-ae2b-96d56b60a061.png
 wwwroot\uploads\f44fd932-85f4-4971-aff4-9036bc66fbb5.png
+wwwroot\uploads\fe4e5302-ac8e-4275-8e30-b389b17846cb.jpeg
 wwwroot\uploads\fe705c55-ad69-4ea4-a628-e3c4dd29045c.jpg

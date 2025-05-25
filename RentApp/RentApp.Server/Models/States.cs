@@ -2,9 +2,9 @@
 {
     public enum States
     {
-        Confirmed,
-        InProgress,
-        Completed,
-        Cancelled
+        Confirmed,   // = "Inactiv" în frontend
+        InProgress,  // = "Activ" în frontend
+        Completed,   // = "Finalizat" în frontend
+        Cancelled    // = "Anulat" în frontend
     }
 }

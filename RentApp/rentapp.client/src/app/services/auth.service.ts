@@ -107,7 +107,7 @@ export class AuthService {
      
       return throwError(() => new Error(error.error));
     } else {
-      return throwError(() => new Error('A aparut o eroare'));
+      return throwError(() => new Error('A apărut o eroare, combinație de date incorectă!'));
     }
   }
   deleteAccount(): Observable<any> {

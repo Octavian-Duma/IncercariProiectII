@@ -38,7 +38,7 @@ export class LoginComponent {
         localStorage.setItem('telephoneNumber', response.telephoneNumber);
 
 
-        this.success = 'Conectare realizata cu succes!';
+        this.success = 'Conectare realizată cu succes!';
 
         setTimeout(() => {
           this.router.navigate(['/products']);
@@ -46,7 +46,7 @@ export class LoginComponent {
       },
       error: (error) => {
         //mesaju din backend
-        this.error = error.message || 'Parola sau e-mail invalid!';
+        this.error = error.message || 'Parolă sau e-mail invalid!';
       }
     });
   }

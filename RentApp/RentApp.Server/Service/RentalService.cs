@@ -3,6 +3,7 @@ using RentApp.Data;
 using RentApp.Models;
 using RentApp.Server.Models;
 using RentApp.Server.Models.DTO.Rental;
+using RentApp.Server.Models.DTO.Review;
 
 namespace RentApp.Server.Service
 {
@@ -14,9 +15,8 @@ namespace RentApp.Server.Service
         Task<ProductRentalDetailsDTO?> GetProductDetailsAsync(int productId);
         Task<IEnumerable<RentalListItemDTO>> GetAllRentalsAsync();
         Task<IEnumerable<RentalWithUserDTO>> GetAllRentalsWithUsersAsync();
-
-
     }
+
     public class RentalService : IRentalService
     {
         private readonly RentDbContext _context;
@@ -64,11 +64,20 @@ namespace RentApp.Server.Service
             return rentals.Select(r => new RentalListItemDTO
             {
                 RentalId = r.RentalId ?? 0,
+                ProductId = r.ProductId,
+                UserId = r.UserId,
                 ProductName = r.product.Name,
                 StartDate = r.StartDate,
                 EndDate = r.EndDate,
                 TotalPrice = r.TotalPrice,
-                Status = r.Status.ToString() 
+                Status = r.Status switch
+                {
+                    States.Confirmed => "Inactiv",
+                    States.InProgress => "Activ",
+                    States.Completed => "Finalizat",
+                    States.Cancelled => "Anulat",
+                    _ => r.Status.ToString()
+                }
             });
         }
 
@@ -81,15 +90,39 @@ namespace RentApp.Server.Service
             if (rental == null)
                 return false;
 
-            if (rental.Status != States.Confirmed)
-                throw new Exception("Doar inchirierile confirmate pot fi anulate");
+            // 1. Dacă perioada s-a terminat, și nu e deja Completed, marchează ca Completed & produs disponibil
+            if (rental.Status != States.Completed && rental.EndDate.Date < DateTime.UtcNow.Date)
+            {
+                rental.Status = States.Completed;
+                rental.product.Available = true;
+                await _context.SaveChangesAsync();
+            }
 
-            rental.Status = States.Cancelled;
-            rental.product.Available = true;
+            // 2. Dacă statusul este Completed (Finalizat) – ștergi complet închirierea!
+            if (rental.Status == States.Completed)
+            {
+                _context.Rentals.Remove(rental);
+                rental.product.Available = true; // Marchează produsul ca disponibil
+                await _context.SaveChangesAsync();
+                return true;
+            }
 
-            await _context.SaveChangesAsync();
-            return true;
+            // 3. Poți anula (nu șterge!) doar dacă este Confirmed și ai > 3 zile până la start
+            var daysUntilStart = (rental.StartDate.Date - DateTime.UtcNow.Date).TotalDays;
+            if (rental.Status == States.Confirmed && daysUntilStart >= 3)
+            {
+                rental.Status = States.Cancelled;
+                rental.product.Available = true;
+                await _context.SaveChangesAsync();
+                return true;
+            }
+
+            // 4. Nu poți anula/șterge în alte cazuri!
+            throw new Exception("Poți șterge doar o închiriere finalizată sau să anulezi cu minim 3 zile înainte de data de început!");
         }
+
+
+
 
         public async Task<ProductRentalDetailsDTO?> GetProductDetailsAsync(int productId)
         {
@@ -106,6 +139,7 @@ namespace RentApp.Server.Service
                 Available = product.Available
             };
         }
+
         public async Task<IEnumerable<RentalListItemDTO>> GetAllRentalsAsync()
         {
             var rentals = await _context.Rentals
@@ -121,9 +155,17 @@ namespace RentApp.Server.Service
                 StartDate = r.StartDate,
                 EndDate = r.EndDate,
                 TotalPrice = r.TotalPrice,
-                Status = r.Status.ToString()
+                Status = r.Status switch
+                {
+                    States.Confirmed => "Inactiv",
+                    States.InProgress => "Activ",
+                    States.Completed => "Finalizat",
+                    States.Cancelled => "Anulat",
+                    _ => r.Status.ToString()
+                }
             });
         }
+
         public async Task<IEnumerable<RentalWithUserDTO>> GetAllRentalsWithUsersAsync()
         {
             var rentals = await _context.Rentals
@@ -140,13 +182,18 @@ namespace RentApp.Server.Service
                 StartDate = r.StartDate,
                 EndDate = r.EndDate,
                 TotalPrice = r.TotalPrice,
-                Status = r.Status.ToString(),
+                Status = r.Status switch
+                {
+                    States.Confirmed => "Inactiv",
+                    States.InProgress => "Activ",
+                    States.Completed => "Finalizat",
+                    States.Cancelled => "Anulat",
+                    _ => r.Status.ToString()
+                },
                 UserName = r.user.Name,
                 UserEmail = r.user.email,
                 UserTelephone = r.user.telephoneNumber
             });
         }
-
-
     }
 }

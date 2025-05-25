@@ -1,15 +1,33 @@
 <div class="review-box">
   <div class="review-header">
-    <label class="review-label">Lasă o recenzie:</label>
+    <label class="review-label"><strong>Lasă o recenzie:</strong></label>
   </div>
   <div class="review-stars">
-    <span *ngFor="let star of stars" (click)="selectStar(star)" class="star" [class.selected]="star <= selectedRating">★</span>
+    <span *ngFor="let star of stars"
+          (click)="selectStar(star)"
+          class="star"
+          [class.selected]="star <= selectedRating">★</span>
   </div>
-  <textarea [formControl]="commentControl" placeholder="Scrie un comentariu..." class="review-textarea" rows="3"></textarea>
+
+  <div class="review-info-message">
+    Poți adăuga o singură recenzie anonimă la acest produs. După trimitere, nu o mai poți modifica sau șterge!
+  </div>
+
+  <textarea [formControl]="commentControl"
+            placeholder="Scrie un comentariu..."
+            class="review-textarea"
+            rows="3"></textarea>
+
+  <!-- Mesaj dacă ai trimis deja review, sub textarea -->
+  <div *ngIf="externalMessage" class="review-warning-message">{{ externalMessage }}</div>
+
   <div class="review-actions">
-    <button class="btn submit" (click)="submitReview()" [disabled]="!selectedRating || !commentControl.value">Trimite</button>
+    <button class="btn submit"
+            (click)="submitReview()"
+            [disabled]="!selectedRating || !commentControl.value || externalMessage">
+      Trimite
+    </button>
     <button class="btn cancel" (click)="cancel()">Anulează</button>
   </div>
-  <p *ngIf="externalMessage" class="confirmation">{{ externalMessage }}</p>
   <p *ngIf="errorMessage" class="error">{{ errorMessage }}</p>
 </div>

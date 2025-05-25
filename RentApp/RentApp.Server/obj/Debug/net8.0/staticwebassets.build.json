@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "88t3hSfcYiA4lPFjlZauFyfxZCgFlA0uRUozywXpM4U=",
+  "Hash": "UFTfrPjUqxMDAqMzVsi7anjnvOP+2L7ePYqZqSFk4q4=",
   "Source": "RentApp.Server",
   "BasePath": "_content/RentApp.Server",
   "Mode": "Default",
@@ -678,6 +678,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\f44fd932-85f4-4971-aff4-9036bc66fbb5.png"
+    },
+    {
+      "Identity": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\fe4e5302-ac8e-4275-8e30-b389b17846cb.jpeg",
+      "SourceId": "RentApp.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\",
+      "BasePath": "_content/RentApp.Server",
+      "RelativePath": "uploads/fe4e5302-ac8e-4275-8e30-b389b17846cb#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "n3gsbp2hco",
+      "Integrity": "fXAbRy00nOvHLzv3ZBFdQ2pM13Y6YiSCz3K4tSMmxPY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\fe4e5302-ac8e-4275-8e30-b389b17846cb.jpeg"
     },
     {
       "Identity": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\fe705c55-ad69-4ea4-a628-e3c4dd29045c.jpg",
@@ -3241,6 +3262,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-hpzSh7QCRDQ2ALWck5e+4TP/rs2v8j2ToBNjZNhDBy8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/fe4e5302-ac8e-4275-8e30-b389b17846cb.jpeg",
+      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\fe4e5302-ac8e-4275-8e30-b389b17846cb.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "366228"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fXAbRy00nOvHLzv3ZBFdQ2pM13Y6YiSCz3K4tSMmxPY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 20:07:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fXAbRy00nOvHLzv3ZBFdQ2pM13Y6YiSCz3K4tSMmxPY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/fe4e5302-ac8e-4275-8e30-b389b17846cb.n3gsbp2hco.jpeg",
+      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\fe4e5302-ac8e-4275-8e30-b389b17846cb.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "366228"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fXAbRy00nOvHLzv3ZBFdQ2pM13Y6YiSCz3K4tSMmxPY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 20:07:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "n3gsbp2hco"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/fe4e5302-ac8e-4275-8e30-b389b17846cb.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fXAbRy00nOvHLzv3ZBFdQ2pM13Y6YiSCz3K4tSMmxPY="
         }
       ]
     },

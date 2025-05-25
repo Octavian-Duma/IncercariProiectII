@@ -175,3 +175,16 @@ span.finalizat {
     transform: rotate(360deg);
   }
 }
+.review-info-message {
+  text-align: left;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  color: #222;
+  padding-left: 0.15rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.review-info-message-secondary {
+  color: #555;
+  font-size: 0.97em;
+}

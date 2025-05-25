@@ -23,18 +23,21 @@ export class ReviewComponent {
   errorMessage = '';
 
   selectStar(star: number): void {
-    this.selectedRating = star;
+    if (!this.externalMessage) {
+      this.selectedRating = star;
+    }
   }
 
   submitReview(): void {
     this.errorMessage = '';
+    if (this.externalMessage) return;
     if (this.selectedRating > 0) {
       this.submitted.emit({
         rating: this.selectedRating,
         comment: this.commentControl.value || ''
       });
     } else {
-      this.errorMessage = 'Te rugăm să selectezi un număr de stele.';
+      this.errorMessage = 'Te rugăm să selectezi un număr de stele!';
     }
   }
 

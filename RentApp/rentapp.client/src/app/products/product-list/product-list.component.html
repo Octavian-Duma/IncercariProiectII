@@ -74,7 +74,7 @@
 
   <!-- Mesaj când nu există produse -->
   <div *ngIf="filteredProducts.length === 0 && !isLoading" class="no-products">
-    <p>Nu s-au găsit produse care să corespundă criteriilor tale de căutare.</p>
+    <p>Nu s-au găsit produse care să corespundă criteriilor tale de căutare!</p>
     <button (click)="resetFilters()" class="btn-reset">Resetează filtrele</button>
   </div>
 

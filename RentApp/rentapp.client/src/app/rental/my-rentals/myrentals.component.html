@@ -35,14 +35,17 @@
           <button *ngIf="rental.status === 'Finalizat'" (click)="showReviewPopup(rental.rentalId)" class="review-btn">Adaugă recenzie</button>
           <button (click)="confirmDelete(rental.rentalId)" class="delete-btn">Șterge închirierea</button>
         </div>
-        <app-review *ngIf="openReviewForRentalId === rental.rentalId"
+        <div *ngIf="isReviewLoading(rental.rentalId)" style="padding: 1rem 0 0.5rem 0;">
+          <span style="color: #007bbd; font-size: 1.03em;"><i>Se verifică statusul recenziei...</i></span>
+        </div>
+        <app-review *ngIf="openReviewForRentalId === rental.rentalId && reviewStatus[rental.rentalId] != null"
                     [productId]="rental.productId"
+                    [externalMessage]="getReviewWarningMsg(rental.rentalId)"
                     (submitted)="handleReviewSubmit($event, rental)"
                     (canceled)="closeReviewPopup()">
         </app-review>
       </div>
     </div>
-
     <ng-template #noRentals>
       <p class="no-rentals">Nu ai închirieri active.</p>
     </ng-template>

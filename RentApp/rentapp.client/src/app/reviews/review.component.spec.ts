@@ -1,44 +1,15 @@
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
-import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { ReviewService } from '../services/review.service';
-import { Review } from './review.model';
+@Injectable({ providedIn: 'root' })
+export class ReviewService {
+  private apiUrl = 'https://localhost:7020/api/reviews';
 
-@Component({
-  selector: 'app-review',
-  standalone: true,
-  imports: [CommonModule, FormsModule],
-  templateUrl: './review.component.html',
-  styleUrls: ['./review.component.css']
-})
-export class ReviewComponent {
-  @Input() productId!: number;
-  @Input() externalMessage: string = '';
-  @Output() submitted = new EventEmitter<Review>();
-  @Output() canceled = new EventEmitter<void>();
+  constructor(private http: HttpClient) { }
 
-  rating: number = 0;
-  comment: string = '';
-
-  constructor(private reviewService: ReviewService) { }
-
-  setRating(rating: number) {
-    this.rating = rating;
-  }
-
-  submitReview() {
-    if (this.rating && this.comment) {
-      const review: Review = {
-        productId: this.productId,
-        rating: this.rating,
-        comment: this.comment
-      };
-      this.submitted.emit(review);
-    }
-  }
-
-  cancel() {
-    this.canceled.emit();
+  addReview(productId: number, review: { stars: number, comment: string }): Observable<any> {
+    const headers = { Authorization: 'Bearer ' + localStorage.getItem('token') };
+    return this.http.post(`${this.apiUrl}/${productId}`, review, { headers });
   }
 }
