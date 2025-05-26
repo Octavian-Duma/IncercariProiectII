@@ -29,13 +29,25 @@ namespace RentApp.Server.Service
         public async Task<int> RentProductAsync(RentalRequestDTO dto, int userId)
         {
             var product = await _context.Products.FindAsync(dto.ProductId);
-            if (product == null || !product.Available)
-                throw new Exception("Produsul nu este disponibil pentru inchiriere");
+            if (product == null)
+                throw new Exception("Produsul nu a fost găsit!");
+
+            // 1. Verificare suprapunere cu alte închirieri ACTIVE (Confirmed sau InProgress)
+            var overlappingRental = await _context.Rentals
+                .Where(r => r.ProductId == dto.ProductId
+                    && (r.Status == States.Confirmed || r.Status == States.InProgress)
+                    && r.EndDate > dto.StartDate
+                    && r.StartDate < dto.EndDate)
+                .FirstOrDefaultAsync();
+
+            if (overlappingRental != null)
+                throw new Exception("Produsul nu este disponibil în perioada selectată!");
 
             var days = (dto.EndDate - dto.StartDate).Days;
             if (days <= 0)
-                throw new Exception("Perioada de inchiriere este invalida");
+                throw new Exception("Perioada de închiriere este invalidă!");
 
+            // 2. Creează noua închiriere FĂRĂ să setezi product.Available = false
             var rental = new Rental
             {
                 ProductId = dto.ProductId,
@@ -47,12 +59,11 @@ namespace RentApp.Server.Service
                 Status = States.Confirmed
             };
 
-            product.Available = false;
             _context.Rentals.Add(rental);
             await _context.SaveChangesAsync();
-
             return rental.RentalId ?? 0;
         }
+
 
         public async Task<IEnumerable<RentalListItemDTO>> GetMyRentalsAsync(int userId)
         {
@@ -90,7 +101,7 @@ namespace RentApp.Server.Service
             if (rental == null)
                 return false;
 
-            // 1. Dacă perioada s-a terminat, și nu e deja Completed, marchează ca Completed & produs disponibil
+            // 1. Dacă perioada s-a terminat și nu e deja Completed, marchează ca Completed & produs disponibil
             if (rental.Status != States.Completed && rental.EndDate.Date < DateTime.UtcNow.Date)
             {
                 rental.Status = States.Completed;
@@ -98,28 +109,32 @@ namespace RentApp.Server.Service
                 await _context.SaveChangesAsync();
             }
 
-            // 2. Dacă statusul este Completed (Finalizat) – ștergi complet închirierea!
-            if (rental.Status == States.Completed)
+            // 2. Dacă statusul este Completed (Finalizat) SAU Cancelled (Anulat) – șterge complet închirierea!
+            if (rental.Status == States.Completed || rental.Status == States.Cancelled)
             {
                 _context.Rentals.Remove(rental);
-                rental.product.Available = true; // Marchează produsul ca disponibil
+                rental.product.Available = true;
                 await _context.SaveChangesAsync();
                 return true;
             }
 
-            // 3. Poți anula (nu șterge!) doar dacă este Confirmed și ai > 3 zile până la start
-            var daysUntilStart = (rental.StartDate.Date - DateTime.UtcNow.Date).TotalDays;
+            // 3. Poți șterge complet dacă este Confirmed (Inactiv) și ai >= 3 zile întregi până la start
+            var nowDate = DateTime.UtcNow.Date;
+            var startDate = rental.StartDate.Date;
+            var daysUntilStart = (startDate - nowDate).Days;
+
             if (rental.Status == States.Confirmed && daysUntilStart >= 3)
             {
-                rental.Status = States.Cancelled;
+                _context.Rentals.Remove(rental);
                 rental.product.Available = true;
                 await _context.SaveChangesAsync();
                 return true;
             }
 
             // 4. Nu poți anula/șterge în alte cazuri!
-            throw new Exception("Poți șterge doar o închiriere finalizată sau să anulezi cu minim 3 zile înainte de data de început!");
+            throw new Exception("Poți șterge o închiriere finalizată, sau poți anula cu minim 3 zile înainte de data de început (ștergerea se consideră tot anulare)!");
         }
+
 
 
 

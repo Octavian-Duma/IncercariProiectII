@@ -98,6 +98,7 @@ export class MyRentalsComponent implements OnInit {
           this.message = error.error?.message || 'Poți șterge doar o închiriere finalizată sau să anulezi cu minim 3 zile înainte de început!';
           this.loading = false;
           setTimeout(() => this.message = '', 10000);
+
         }
       });
     }

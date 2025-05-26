@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\RentApp.client.esproj|c:\\facultate\\an 3\\sem 2\\ii\\proiect\\personalworktest\\rentapp\\rentapp.client\\src\\app\\rental\\my-rentals\\myrentals.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\RentApp.client.esproj|solutionrelative:rentapp.client\\src\\app\\rental\\my-rentals\\myrentals.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\RentApp.client.esproj|c:\\facultate\\an 3\\sem 2\\ii\\proiect\\personalworktest\\rentapp\\rentapp.client\\src\\app\\rental\\rent-product\\rent-product.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\RentApp.client.esproj|solutionrelative:rentapp.client\\src\\app\\rental\\rent-product\\rent-product.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\RentApp.client.esproj|c:\\facultate\\an 3\\sem 2\\ii\\proiect\\personalworktest\\rentapp\\rentapp.client\\src\\app\\products\\product-list\\product-list.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\RentApp.client.esproj|solutionrelative:rentapp.client\\src\\app\\products\\product-list\\product-list.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\RentApp.client.esproj|c:\\facultate\\an 3\\sem 2\\ii\\proiect\\personalworktest\\rentapp\\rentapp.client\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\RentApp.client.esproj|solutionrelative:rentapp.client\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\RentApp.client.esproj|c:\\facultate\\an 3\\sem 2\\ii\\proiect\\personalworktest\\rentapp\\rentapp.client\\src\\app\\products\\product-list\\product-list.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\RentApp.client.esproj|solutionrelative:rentapp.client\\src\\app\\products\\product-list\\product-list.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\RentApp.client.esproj|c:\\facultate\\an 3\\sem 2\\ii\\proiect\\personalworktest\\rentapp\\rentapp.client\\src\\app\\rental\\rent-product\\rent-product.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\RentApp.client.esproj|solutionrelative:rentapp.client\\src\\app\\rental\\rent-product\\rent-product.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\RentApp.client.esproj|c:\\facultate\\an 3\\sem 2\\ii\\proiect\\personalworktest\\rentapp\\rentapp.client\\src\\app\\rental\\rent-product\\rent-product.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\RentApp.client.esproj|solutionrelative:rentapp.client\\src\\app\\rental\\rent-product\\rent-product.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\RentApp.client.esproj|c:\\facultate\\an 3\\sem 2\\ii\\proiect\\personalworktest\\rentapp\\rentapp.client\\src\\app\\rental\\my-rentals\\myrentals.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\RentApp.client.esproj|solutionrelative:rentapp.client\\src\\app\\rental\\my-rentals\\myrentals.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\RentApp.client.esproj|c:\\facultate\\an 3\\sem 2\\ii\\proiect\\personalworktest\\rentapp\\rentapp.client\\src\\app\\rental\\my-rentals\\myrentals.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DCD00620-2BDD-0F6E-1D02-2A5A5859C372}|rentapp.client\\RentApp.client.esproj|solutionrelative:rentapp.client\\src\\app\\rental\\my-rentals\\myrentals.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E21B034-6E03-4C0F-8211-0683286F5422}|RentApp.Server\\RentApp.Server.csproj|c:\\facultate\\an 3\\sem 2\\ii\\proiect\\personalworktest\\rentapp\\rentapp.server\\service\\rentalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E21B034-6E03-4C0F-8211-0683286F5422}|RentApp.Server\\RentApp.Server.csproj|solutionrelative:rentapp.server\\service\\rentalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,54 +54,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "myrentals.component.ts",
-              "DocumentMoniker": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\rental\\my-rentals\\myrentals.component.ts",
-              "RelativeDocumentMoniker": "rentapp.client\\src\\app\\rental\\my-rentals\\myrentals.component.ts",
-              "ToolTip": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\rental\\my-rentals\\myrentals.component.ts",
-              "RelativeToolTip": "rentapp.client\\src\\app\\rental\\my-rentals\\myrentals.component.ts",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAQwGAAAAAbAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "app.module.ts",
+              "DocumentMoniker": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\app.module.ts",
+              "RelativeDocumentMoniker": "rentapp.client\\src\\app\\app.module.ts",
+              "ToolTip": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\app.module.ts",
+              "RelativeToolTip": "rentapp.client\\src\\app\\app.module.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-05-26T07:58:22.534Z",
+              "WhenOpened": "2025-05-26T10:18:03.546Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "product-list.component.ts",
-              "DocumentMoniker": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\products\\product-list\\product-list.component.ts",
-              "RelativeDocumentMoniker": "rentapp.client\\src\\app\\products\\product-list\\product-list.component.ts",
-              "ToolTip": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\products\\product-list\\product-list.component.ts",
-              "RelativeToolTip": "rentapp.client\\src\\app\\products\\product-list\\product-list.component.ts",
-              "ViewState": "AgIAACMAAAAAAAAAAAAAwCYAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "rent-product.component.ts",
+              "DocumentMoniker": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\rental\\rent-product\\rent-product.component.ts",
+              "RelativeDocumentMoniker": "rentapp.client\\src\\app\\rental\\rent-product\\rent-product.component.ts",
+              "ToolTip": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\rental\\rent-product\\rent-product.component.ts",
+              "RelativeToolTip": "rentapp.client\\src\\app\\rental\\rent-product\\rent-product.component.ts",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-05-26T07:46:28.349Z",
+              "WhenOpened": "2025-05-26T10:17:58.36Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "product-list.component.html",
-              "DocumentMoniker": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\products\\product-list\\product-list.component.html",
-              "RelativeDocumentMoniker": "rentapp.client\\src\\app\\products\\product-list\\product-list.component.html",
-              "ToolTip": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\products\\product-list\\product-list.component.html",
-              "RelativeToolTip": "rentapp.client\\src\\app\\products\\product-list\\product-list.component.html",
-              "ViewState": "AgIAADQAAAAAAAAAAAAmwFoAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-05-26T07:46:12.809Z",
+              "Title": "rent-product.component.css",
+              "DocumentMoniker": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\rental\\rent-product\\rent-product.component.css",
+              "RelativeDocumentMoniker": "rentapp.client\\src\\app\\rental\\rent-product\\rent-product.component.css",
+              "ToolTip": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\rental\\rent-product\\rent-product.component.css",
+              "RelativeToolTip": "rentapp.client\\src\\app\\rental\\rent-product\\rent-product.component.css",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-26T10:17:56.847Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "rent-product.component.html",
-              "DocumentMoniker": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\rental\\rent-product\\rent-product.component.html",
-              "RelativeDocumentMoniker": "rentapp.client\\src\\app\\rental\\rent-product\\rent-product.component.html",
-              "ToolTip": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\rental\\rent-product\\rent-product.component.html",
-              "RelativeToolTip": "rentapp.client\\src\\app\\rental\\rent-product\\rent-product.component.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA6AAAAAAAAAA==",
+              "Title": "myrentals.component.html",
+              "DocumentMoniker": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\rental\\my-rentals\\myrentals.component.html",
+              "RelativeDocumentMoniker": "rentapp.client\\src\\app\\rental\\my-rentals\\myrentals.component.html",
+              "ToolTip": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\rental\\my-rentals\\myrentals.component.html",
+              "RelativeToolTip": "rentapp.client\\src\\app\\rental\\my-rentals\\myrentals.component.html",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-05-26T07:38:55.535Z",
+              "WhenOpened": "2025-05-26T10:17:54.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "myrentals.component.css",
+              "DocumentMoniker": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\rental\\my-rentals\\myrentals.component.css",
+              "RelativeDocumentMoniker": "rentapp.client\\src\\app\\rental\\my-rentals\\myrentals.component.css",
+              "ToolTip": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\rentapp.client\\src\\app\\rental\\my-rentals\\myrentals.component.css",
+              "RelativeToolTip": "rentapp.client\\src\\app\\rental\\my-rentals\\myrentals.component.css",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-26T10:17:51.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RentalService.cs",
+              "DocumentMoniker": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\Service\\RentalService.cs",
+              "RelativeDocumentMoniker": "RentApp.Server\\Service\\RentalService.cs",
+              "ToolTip": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\Service\\RentalService.cs",
+              "RelativeToolTip": "RentApp.Server\\Service\\RentalService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T10:15:18.862Z",
               "EditorCaption": ""
             }
           ]

@@ -1,3 +1,4 @@
+wwwroot\uploads\08a55315-2ca5-4cc0-8e2f-9f25e0017001.jpg
 wwwroot\uploads\0b4e515c-a9eb-4535-a241-1990e8767ae1.jpg
 wwwroot\uploads\12f112fd-6242-482f-8a58-711dc4446452.jpg
 wwwroot\uploads\1908340f-4965-480b-9fbd-d03a1ad88357.jpg

@@ -9,6 +9,7 @@ import { AuthInterceptor } from './auth/auth.interceptor';
 import { MyProductsComponent } from './products/my-products/my-products.component';
 import { ProductDetailsComponent } from './products/product-details/product-details.component';
 import { EditProductComponent } from './products/product-edit/product-edit.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   imports: [
@@ -18,7 +19,7 @@ import { EditProductComponent } from './products/product-edit/product-edit.compo
     FormsModule,
     CommonModule,
     ReactiveFormsModule,
-    AppComponent // <-- aici, nu în declarations!
+    AppComponent, 
   ],
   providers: [
     {

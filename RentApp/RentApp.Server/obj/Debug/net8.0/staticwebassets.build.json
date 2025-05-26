@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UFTfrPjUqxMDAqMzVsi7anjnvOP+2L7ePYqZqSFk4q4=",
+  "Hash": "f/prQcxJtOZzne1+QWUby9XxeLhr/n0ITCZIDzMKeJk=",
   "Source": "RentApp.Server",
   "BasePath": "_content/RentApp.Server",
   "Mode": "Default",
@@ -28,6 +28,27 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\08a55315-2ca5-4cc0-8e2f-9f25e0017001.jpg",
+      "SourceId": "RentApp.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\",
+      "BasePath": "_content/RentApp.Server",
+      "RelativePath": "uploads/08a55315-2ca5-4cc0-8e2f-9f25e0017001#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "aw7lo6yhzm",
+      "Integrity": "OmuzY8EbtGE2Q5iwshpPUsA/tGMIQfNlmCzT0uD5UYQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\08a55315-2ca5-4cc0-8e2f-9f25e0017001.jpg"
+    },
     {
       "Identity": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\0b4e515c-a9eb-4535-a241-1990e8767ae1.jpg",
       "SourceId": "RentApp.Server",
@@ -723,6 +744,88 @@
     }
   ],
   "Endpoints": [
+    {
+      "Route": "uploads/08a55315-2ca5-4cc0-8e2f-9f25e0017001.aw7lo6yhzm.jpg",
+      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\08a55315-2ca5-4cc0-8e2f-9f25e0017001.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "90075"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OmuzY8EbtGE2Q5iwshpPUsA/tGMIQfNlmCzT0uD5UYQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 09:01:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aw7lo6yhzm"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/08a55315-2ca5-4cc0-8e2f-9f25e0017001.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OmuzY8EbtGE2Q5iwshpPUsA/tGMIQfNlmCzT0uD5UYQ="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/08a55315-2ca5-4cc0-8e2f-9f25e0017001.jpg",
+      "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\08a55315-2ca5-4cc0-8e2f-9f25e0017001.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "90075"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OmuzY8EbtGE2Q5iwshpPUsA/tGMIQfNlmCzT0uD5UYQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 09:01:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OmuzY8EbtGE2Q5iwshpPUsA/tGMIQfNlmCzT0uD5UYQ="
+        }
+      ]
+    },
     {
       "Route": "uploads/0b4e515c-a9eb-4535-a241-1990e8767ae1.jpg",
       "AssetFile": "C:\\Facultate\\An 3\\Sem 2\\II\\Proiect\\PersonalWorkTest\\RentApp\\RentApp.Server\\wwwroot\\uploads\\0b4e515c-a9eb-4535-a241-1990e8767ae1.jpg",

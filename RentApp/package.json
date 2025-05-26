@@ -6,6 +6,7 @@
   },
   "dependencies": {
     "@angular/forms": "^19.2.11",
+    "@ng-bootstrap/ng-bootstrap": "^18.0.0",
     "bootstrap": "^5.3.5",
     "google-libphonenumber": "^3.2.40",
     "intl-tel-input": "^19.5.7",

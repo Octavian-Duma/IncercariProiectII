@@ -71,7 +71,7 @@
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s;
-  align-self: flex-start;
+  align-self: center;
 }
 
   .rent-btn:hover {
@@ -108,3 +108,66 @@
   font-weight: 500;
   text-align: center;
 }
+
+.ngb-dp {
+  font-size: 1.35rem !important;
+  min-width: 370px !important;
+}
+
+.ngb-dp-day,
+.ngb-dp-weekday {
+  width: 2.8rem !important;
+  height: 2.8rem !important;
+}
+
+.calendar-btn {
+  margin-left: 8px;
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.datepicker-big {
+  width: 220px !important;
+  font-size: 1.15rem !important;
+}
+.form-input[type="date"] {
+  font-size: 1.13rem;
+  padding: 0.62rem 1.2rem;
+  border: 1.5px solid #007bbd;
+  border-radius: 7px;
+  background: #f6fcff;
+  color: #2c3e50;
+  box-shadow: 0 2px 8px rgba(0, 123, 189, 0.06);
+  outline: none;
+  transition: border-color 0.22s, box-shadow 0.22s;
+}
+
+  .form-input[type="date"]:focus {
+    border-color: #005a8c;
+    box-shadow: 0 4px 14px rgba(0, 123, 189, 0.13);
+    background: #eaf7ff;
+  }
+
+  .form-input[type="date"]:invalid {
+    border-color: #e74c3c;
+    background: #fff7f6;
+  }
+
+.calendar-message {
+  font-size: 1rem;
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+  .calendar-message.error {
+    color: #e74c3c;
+    font-weight: 600;
+  }
+
+  .calendar-message.success {
+    color: #43a047;
+    font-weight: 600;
+  }

@@ -5,27 +5,48 @@
     <form class="rent-form" (ngSubmit)="calculateTotal()">
       <div class="form-group">
         <label for="startDate">Data de început:</label>
-        <input type="date" id="startDate" [(ngModel)]="startDate" name="startDate" class="form-input" required>
+        <input type="date"
+               id="startDate"
+               [(ngModel)]="startDate"
+               name="startDate"
+               class="form-input"
+               [min]="today"
+               required />
+        <p class="calendar-message error" *ngIf="startDate && startDate < today">
+          Nu poți selecta o dată de început din trecut!
+        </p>
       </div>
 
       <div class="form-group">
         <label for="endDate">Data de sfârșit:</label>
-        <input type="date" id="endDate" [(ngModel)]="endDate" name="endDate" class="form-input" required>
+        <input type="date"
+               id="endDate"
+               [(ngModel)]="endDate"
+               name="endDate"
+               class="form-input"
+               [min]="startDate || today"
+               required />
+        <p class="calendar-message error" *ngIf="startDate && endDate && endDate <= startDate">
+          Data de sfârșit trebuie să fie după data de început!
+        </p>
       </div>
 
       <button type="submit" class="rent-btn">Calculează costul</button>
     </form>
 
-   
     <div *ngIf="showPreview" class="preview-box">
       <h3>Previzualizare închiriere</h3>
       <p><strong>Perioadă:</strong> {{ startDate }} - {{ endDate }}</p>
       <p><strong>Preț/zi:</strong> {{ pricePerDay }} RON</p>
       <p><strong>Total:</strong> {{ totalPrice }} RON</p>
-
       <button (click)="rentProduct()" class="rent-btn">Finalizare închiriere</button>
     </div>
 
-    <p class="message" *ngIf="message">{{ message }}</p>
+    <p class="calendar-message success" *ngIf="message && message.includes('succes')">
+      {{ message }}
+    </p>
+    <p class="calendar-message error" *ngIf="message && !message.includes('succes')">
+      {{ message }}
+    </p>
   </div>
 </div>

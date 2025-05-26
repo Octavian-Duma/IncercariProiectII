@@ -16,10 +16,11 @@ export class RentProductComponent implements OnInit {
   @Input() productId!: number;
   startDate!: string;
   endDate!: string;
-  pricePerDay: number = 0; 
+  pricePerDay: number = 0;
   message = '';
   showPreview = false;
   totalPrice = 0;
+  today: string = new Date().toISOString().split('T')[0];
 
   constructor(private rentalService: RentalService, private route: ActivatedRoute) { }
 
@@ -28,18 +29,16 @@ export class RentProductComponent implements OnInit {
     if (idParam) {
       this.productId = +idParam;
 
-    
       this.rentalService.getProductDetails(this.productId).subscribe({
         next: (product) => {
-          this.pricePerDay = product.pricePerDay; // Setează prețul din backend
+          this.pricePerDay = product.pricePerDay;
         },
         error: (err) => {
-          this.message = err.error?.message || 'Eroare la încărcarea detaliilor produsului.';
+          this.message = err.error?.message || 'Eroare la încărcarea detaliilor produsului!';
         }
       });
     }
   }
-
 
   calculateTotal(): void {
     if (this.startDate && this.endDate) {
@@ -53,7 +52,7 @@ export class RentProductComponent implements OnInit {
         this.message = '';
       } else {
         this.showPreview = false;
-        this.message = 'Data de sfârșit trebuie să fie după data de început.';
+        this.message = 'Data de sfârșit trebuie să fie după data de început!';
       }
     }
   }
@@ -71,7 +70,7 @@ export class RentProductComponent implements OnInit {
         this.showPreview = false;
       },
       error: err => {
-        this.message = err.error?.message || 'Eroare la închiriere.';
+        this.message = err.error?.message || 'Eroare la închiriere!';
       }
     });
   }
