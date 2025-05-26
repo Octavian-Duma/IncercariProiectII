@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, Location } from '@angular/common';
 import { RouterModule, Router } from '@angular/router';
 import { AuthService } from './services/auth.service';
 import { FormsModule } from '@angular/forms';
@@ -23,7 +23,8 @@ export class AppComponent implements OnInit {
 
   constructor(
     public authService: AuthService,
-    private router: Router
+    private router: Router,
+    private location: Location
   ) { }
 
   ngOnInit(): void {
@@ -40,6 +41,16 @@ export class AppComponent implements OnInit {
 
   goToMyRentals(): void {
     this.router.navigate(['/rentals/my']);
+  }
+
+  goBack(): void {
+    this.location.back();
+  }
+
+  // Asta este NOUA metodă:
+  showBackButton(): boolean {
+    const url = this.router.url;
+    return !(url.startsWith('/login') || url.startsWith('/register'));
   }
 
   changePassword(): void {

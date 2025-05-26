@@ -1,12 +1,13 @@
 .register-container {
   max-width: 400px;
   margin: 3rem auto;
-  padding: 2rem;
+  padding: 2rem 2.5rem;
   background-color: #ffffff;
   border: 1px solid #cce4ff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
+
 
 h2 {
   color: #007bff;

@@ -25,7 +25,7 @@
 }
 
 .brand-title {
-  font-size: 2.8rem;
+  font-size: 3rem;
   color: #007bff;
   margin-bottom: 1rem; 
 }
@@ -58,15 +58,15 @@
 .login-container {
   width: 100%;
   max-width: 400px;
-  min-height: 420px; 
-  padding: 2rem;
+  min-height: 420px;
+  padding: 2rem 2.5rem;
   background-color: #ffffff;
   border: 1px solid #cce4ff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
 
@@ -94,7 +94,7 @@ input {
 }
 
 button {
-  width: 100%;
+  width: 50%;
   background-color: #007bff;
   color: white;
   padding: 0.6rem;
@@ -122,3 +122,16 @@ button {
   text-align: center;
   font-weight: 500;
 }
+.login-container input[type="text"],
+.login-container input[type="password"],
+.login-container input[type="email"] {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.login-container button {
+  margin-top: 2rem; 
+}
+

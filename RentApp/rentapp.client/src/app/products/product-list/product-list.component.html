@@ -82,11 +82,10 @@
   <div class="popup-over-grid" *ngIf="showLoginPopup">
     <div class="popup">
       <div class="popup-title">Autentificare necesară!</div>
-      <p>Trebuie să fii conectat pentru a închiria un produs!</p>
+      <p>{{ popupMessage }}</p>
       <div class="popup-actions">
         <button (click)="goToLogin()">Mergi la autentificare</button>
         <button (click)="closePopup()" class="btn-cancel">Renunță</button>
       </div>
     </div>
   </div>
-</div>

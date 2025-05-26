@@ -1,15 +1,15 @@
 <div class="rent-container">
   <div class="rent-card">
-    <h2 class="rent-heading">ÎNCHIRIERE PRODUS</h2>
+    <h2 class="rent-heading"><strong>ÎNCHIRIERE PRODUS</strong></h2>
 
     <form class="rent-form" (ngSubmit)="calculateTotal()">
       <div class="form-group">
-        <label for="startDate">Data de început</label>
+        <label for="startDate">Data de început:</label>
         <input type="date" id="startDate" [(ngModel)]="startDate" name="startDate" class="form-input" required>
       </div>
 
       <div class="form-group">
-        <label for="endDate">Data de sfârșit</label>
+        <label for="endDate">Data de sfârșit:</label>
         <input type="date" id="endDate" [(ngModel)]="endDate" name="endDate" class="form-input" required>
       </div>
 

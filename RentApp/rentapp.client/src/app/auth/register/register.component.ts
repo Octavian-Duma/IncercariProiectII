@@ -27,14 +27,14 @@ export class RegisterComponent {
 
     this.authService.register(this.name, this.email, this.telephoneNumber, this.password).subscribe({
       next: () => {
-        this.success = 'Inregistrare realizata cu succes!';
+        this.success = 'Înregistrare realizată cu succes!';
         setTimeout(() => {
           this.router.navigate(['/login']);
         }, 1500);
       },
       error: (error) => {
       
-        this.error = error.message || 'Inregistrare esuata. Te rugam sa incerci din nou!';
+        this.error = error.message || 'Înregistrare eșuată. Te rugăm să încerci din nou!';
       }
     });
   }

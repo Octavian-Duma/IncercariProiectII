@@ -1,14 +1,138 @@
-﻿:host {
-    max-width: 1280px;
-    padding: 2rem;
-    text-align: center;
+:host {
+  max-width: 1280px;
+  padding: 2.5rem;
+  text-align: center;
 }
 
-th, td {
-    padding-left: 1rem;
-    padding-right: 1rem;
+.form-group {
+  margin-bottom: 1.3rem;
+  text-align: center;
 }
 
-table {
-    margin: 0 auto;
+label {
+  display: block;
+  text-align: center;
+  margin-bottom: 0.38rem;
+  font-weight: 500;
+  font-size: 1.3rem;
 }
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+input[type="password"],
+select,
+textarea {
+  display: block;
+  margin: 0 auto;
+  width: 95%;
+  max-width: 520px;
+  padding: 0.7rem 0.95rem;
+  border: 1px solid #d0d7e1;
+  border-radius: 7px;
+  background: #f8fcfe;
+  font-size: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  transition: border 0.15s;
+  box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+  margin-left: 0.5rem;
+}
+
+.save-btn {
+  display: block;
+  width: 100%;
+  margin: 1.4rem auto 0 auto;
+  background: #007bbd;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  padding: 0.85rem 0;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+
+  .save-btn:hover {
+    background: #005fa3;
+  }
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f0f4fa;
+  padding: 10px 24px 10px 10px;
+  min-height: 56px;
+}
+
+.back-btn,
+.logout-btn {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  font-weight: 450;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.back-btn {
+  margin-right: 12px;
+}
+
+  .back-btn:hover,
+  .logout-btn:hover {
+    background: #005fa3;
+  }
+
+
+.left-nav-group {
+  display: flex;
+  gap: 23px;
+  align-items: center;
+  margin-right: auto;
+}
+
+  .left-nav-group a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+    font-size: 1.09rem;
+    background: none;
+    border: none;
+    padding: 0.5;
+    transition: color 0.18s;
+  }
+
+    .left-nav-group a:hover {
+      color: #005fa3;
+      text-decoration: none;
+    }
+
+.right-nav-group {
+  display: flex;
+  gap: 23px;
+  align-items: center;
+}
+
+  .right-nav-group a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+    font-size: 1.09rem;
+    background: none;
+    border: none;
+    padding: 0.5;
+    transition: color 0.18s;
+  }
+
+    .right-nav-group a:hover {
+      color: #005fa3;
+      text-decoration: none;
+    }

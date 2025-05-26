@@ -73,13 +73,13 @@ export class MyRentalsComponent implements OnInit {
         this.message = 'Recenzia a fost adăugată cu succes!';
         this.closeReviewPopup();
         this.loading = false;
-        setTimeout(() => this.message = '', 5000);
+        setTimeout(() => this.message = '', 10000);
         this.reviewStatus[rental.rentalId] = 'alreadyReviewed';
       },
       error: (error) => {
         this.message = error.error?.message || 'Eroare la adăugarea recenziei.';
         this.loading = false;
-        setTimeout(() => this.message = '', 5000);
+        setTimeout(() => this.message = '', 10000);
       }
     });
   }
@@ -92,13 +92,12 @@ export class MyRentalsComponent implements OnInit {
           this.message = 'Închirierea a fost ștearsă cu succes!';
           this.loadRentals();
           this.loading = false;
-          setTimeout(() => this.message = '', 5000);
+          setTimeout(() => this.message = '', 10000);
         },
         error: (error) => {
-          // Backend-ul dă mesaj dacă nu poate șterge!
           this.message = error.error?.message || 'Poți șterge doar o închiriere finalizată sau să anulezi cu minim 3 zile înainte de început!';
           this.loading = false;
-          setTimeout(() => this.message = '', 5000);
+          setTimeout(() => this.message = '', 10000);
         }
       });
     }

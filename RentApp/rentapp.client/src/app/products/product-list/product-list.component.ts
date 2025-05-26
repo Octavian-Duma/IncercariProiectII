@@ -31,10 +31,13 @@ export class ProductListComponent implements OnInit {
   // Date din backend
   categories: string[] = [];
   locations: string[] = [];
-  sortOptions: string[] = ['price', 'rating', 'newest']; // Opțiunile din backend
+  sortOptions: string[] = ['price', 'rating', 'newest'];
 
   showLoginPopup: boolean = false;
   isLoading: boolean = true;
+
+  //  Mesaj dinamic pentru popup
+  popupMessage: string = '';
 
   constructor(
     private productService: ProductService,
@@ -44,19 +47,16 @@ export class ProductListComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    // Încărcăm datele inițiale
     this.loadInitialData();
   }
 
-  // Încarcă toate datele inițiale necesare pentru pagină
   loadInitialData(): void {
     this.isLoading = true;
 
-    // Folosim forkJoin pentru a face toate cererile în paralel
     forkJoin({
       products: this.productService.getAll(),
-      categories: this.productService.getCategories(), // Din backend
-      locations: this.productService.getLocations(),   // Din backend
+      categories: this.productService.getCategories(),
+      locations: this.productService.getLocations(),
       favorites: this.authService.isLoggedIn() ? this.favoriteService.getFavorites() : of([])
     }).subscribe({
       next: (result) => {
@@ -71,20 +71,19 @@ export class ProductListComponent implements OnInit {
       error: (err) => {
         console.error('Eroare la încărcarea datelor inițiale:', err);
         this.isLoading = false;
-        // Încărcăm produsele chiar și în caz de eroare la alte date
         this.getProducts();
       }
     });
   }
 
-  // Verifică dacă un produs este favorit
   isFavorite(productId: number): boolean {
     return this.favorites.includes(productId);
   }
 
-  // Adaugă/elimină un produs din favorite
+  // popupMessage diferit la favorite
   toggleFavorite(productId: number) {
     if (!this.authService.isLoggedIn()) {
+      this.popupMessage = 'Trebuie să fii conectat pentru a adăuga la favorite!';
       this.showLoginPopup = true;
       return;
     }
@@ -103,7 +102,6 @@ export class ProductListComponent implements OnInit {
     });
   }
 
-  // Obține toate produsele
   getProducts(): void {
     this.isLoading = true;
     this.productService.getAll().subscribe({
@@ -119,7 +117,6 @@ export class ProductListComponent implements OnInit {
     });
   }
 
-  // Căutare după text
   searchProducts(): void {
     this.isLoading = true;
     this.productService.searchProducts(this.searchQuery).subscribe({
@@ -134,7 +131,6 @@ export class ProductListComponent implements OnInit {
     });
   }
 
-  // Filtreză după categorie
   filterByCategory(): void {
     this.isLoading = true;
     if (this.selectedCategory) {
@@ -153,7 +149,6 @@ export class ProductListComponent implements OnInit {
     }
   }
 
-  // Filtrează după preț
   filterByPrice(): void {
     this.isLoading = true;
     this.productService.filterByPrice(this.minPrice, this.maxPrice).subscribe({
@@ -168,7 +163,6 @@ export class ProductListComponent implements OnInit {
     });
   }
 
-  // Filtrează după locație
   filterByLocation(): void {
     this.isLoading = true;
     this.productService.filterByLocation(this.selectedLocation).subscribe({
@@ -183,7 +177,6 @@ export class ProductListComponent implements OnInit {
     });
   }
 
-  // Sortează produsele
   sortProducts(): void {
     this.isLoading = true;
     this.productService.sortProducts(this.sortBy).subscribe({
@@ -198,7 +191,6 @@ export class ProductListComponent implements OnInit {
     });
   }
 
-  // Aplică toate filtrele deodată
   applyAllFilters(): void {
     this.isLoading = true;
     this.productService.filterProducts(
@@ -220,32 +212,29 @@ export class ProductListComponent implements OnInit {
     });
   }
 
-  // Închiriază un produs
+  //  popupMessage diferit la închiriere
   rentProduct(id: string) {
     if (this.authService.isLoggedIn()) {
       this.router.navigate(['/rent', id]);
     } else {
+      this.popupMessage = 'Trebuie să fii conectat pentru a închiria un produs!';
       this.showLoginPopup = true;
     }
   }
 
-  // Navighează la pagina de login
   goToLogin() {
     this.showLoginPopup = false;
     this.router.navigate(['/login']);
   }
 
-  // Închide popup-ul
   closePopup() {
     this.showLoginPopup = false;
   }
 
-  // Navighează la detaliile produsului
   viewDetails(productId: number): void {
     this.router.navigate(['/products', productId]);
   }
 
-  // Resetează toate filtrele
   resetFilters(): void {
     this.searchQuery = '';
     this.selectedCategory = '';
